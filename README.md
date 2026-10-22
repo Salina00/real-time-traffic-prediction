@@ -66,7 +66,7 @@ An end-to-end Big Data streaming, IoT event processing, and Machine Learning pla
 | **Kafka Connector** | `org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1` | Scala 2.12 connector for Spark 3.5 |
 | **Java Runtime** | OpenJDK 17 or 21 (Temurin) | Required for Spark execution |
 | **Traffic API** | TomTom Flow Segment Data v4 | REST API with coordinate-based queries |
-| **Machine Learning**| scikit-learn 1.5.x | Unsupervised K-Means clustering & supervised RandomForestClassifier |
+| **Machine Learning**| scikit-learn 1.5.x | Multi-Model ML Architecture: K-Means, Random Forest, Isolation Forest |
 | **Dashboard** | Streamlit + Plotly Express | Navy-themed interactive real-time dashboard |
 
 ---
@@ -75,22 +75,24 @@ An end-to-end Big Data streaming, IoT event processing, and Machine Learning pla
 
 ```
 traffic-intelligence/
-├── app.py                      # Streamlit real-time interactive dashboard (with K-Means section)
+├── app.py                      # Streamlit interactive command center (K-Means, Random Forest, Isolation Forest)
 ├── producer.py                 # Traffic event collector (TomTom API or demo stream)
 ├── spark_streaming.py          # PySpark Structured Streaming consumer from Kafka
-├── train_model.py              # Supervised ML: 15-min horizon prediction (Random Forest)
+├── train_model.py              # Supervised ML entry point (delegates to src/congestion_prediction.py)
 ├── requirements.txt            # Pinned Python package dependencies
 ├── .env.example                # Template for configuration & credentials
-├── .env                        # Local active environment configuration
+├── .env                        # Local active environment configuration (excluded from git)
 ├── .gitignore                  # Git ignore rules for logs, venv, and checkpoints
 ├── docker-compose.yml          # Kafka KRaft container + auto-topic-init
 ├── Dockerfile.spark            # Containerized Spark execution alternative
 ├── README.md                   # Complete documentation and execution guide
 ├── config/
 │   ├── __init__.py
-│   └── settings.py             # Configurable Pune roads, coordinates, thresholds & K-Means config
+│   └── settings.py             # Configurable Pune roads, thresholds, and ML model parameters
 ├── src/
 │   ├── __init__.py
+│   ├── congestion_prediction.py # Supervised Random Forest forecaster (~15-min lookahead)
+│   ├── anomaly_detection.py    # Unsupervised Isolation Forest outlier & anomaly detector
 │   ├── clustering.py           # Unsupervised K-Means clustering & dynamic label interpretation
 │   ├── tomtom_client.py        # TomTom Traffic API client & demo generator
 │   ├── congestion.py           # Speed ratio math & classification logic
@@ -98,6 +100,8 @@ traffic-intelligence/
 │   └── data_utils.py           # Dataset cleaning, validation & target shifts
 ├── scripts/
 │   ├── __init__.py
+│   ├── train_prediction_model.py # Workflow: Train & evaluate Random Forest forecaster
+│   ├── train_anomaly_model.py    # Workflow: Train & evaluate Isolation Forest detector
 │   ├── create_topic.py         # Idempotent Kafka topic creator & inspector
 │   ├── generate_demo_data.py   # Synthetic historical dataset generator
 │   └── check_environment.py   # Diagnostic script verifying system readiness
@@ -105,13 +109,21 @@ traffic-intelligence/
 │   ├── raw/                    # Raw event append logs (CSV)
 │   ├── processed/              # Spark streaming output (Parquet & CSV) & clustered CSV
 │   └── demo/                   # Labelled synthetic demonstration datasets
-├── models/                     # Saved ML models, encoders & K-Means artifacts
+├── models/                     # Saved ML models, encoders, and evaluation metadata
+│   ├── congestion_model.joblib
+│   ├── road_encoder.joblib
+│   ├── model_metadata.json
+│   ├── isolation_forest_model.joblib
+│   ├── anomaly_metadata.json
+│   └── kmeans_traffic_model.joblib
 ├── logs/                       # Application execution logs
 └── tests/
     ├── __init__.py
-    ├── test_clustering.py      # Tests for K-Means preprocessing, scaling, dynamic labels & fallback
-    ├── test_congestion.py      # Tests for thresholds, closures & zero-speed
-    └── test_data_validation.py # Tests for duplicates, formatting & tolerance
+    ├── test_anomaly_detection.py      # Tests for Isolation Forest feature scaling & outlier detection
+    ├── test_congestion_prediction.py  # Tests for Random Forest target construction & chronological split
+    ├── test_clustering.py             # Tests for K-Means preprocessing, scaling, dynamic labels & fallback
+    ├── test_congestion.py             # Tests for thresholds, closures & zero-speed
+    └── test_data_validation.py        # Tests for duplicates, formatting & tolerance
 ```
 
 ---
@@ -196,6 +208,79 @@ Categorical columns (such as `road_id`, `road_name`, or timestamps) are excluded
 - **Sample Size Requirement**: K-Means requires at least $K$ valid observations to fit (and ideally $\ge 6$ observations for stable centroids). On small samples, centroid boundaries can be influenced by local anomalies.
 - **Batch / Offline Execution**: K-Means operates on historical batches or snapshots; it is not executed inside Spark's distributed micro-batch engine to avoid streaming driver latency.
 - **Validation on Real vs Demo Data**: While the clustering algorithm works identically on real TomTom API data and synthetic demo data, production deployments require accumulating continuous 24/7 observations across seasons and weather conditions.
+
+---
+
+## 🔮 Supervised Machine Learning: Random Forest Congestion Forecaster
+
+In addition to profiling current traffic with K-Means, the system provides proactive **15-minute future congestion forecasting** using a supervised `RandomForestClassifier` (`src/congestion_prediction.py`).
+
+### 1. Prediction Target & Lookahead Construction
+- **Target Variable**: Congestion category approximately 15 minutes into the future: `low`, `moderate`, `high`, or `closed`.
+- **Lookahead Matching Without Leakage**: For each observation at time $t$ on road $R$, the training pipeline searches strictly for a subsequent observation on the **same road** at $t_{\text{future}}$ such that:
+  $$10 \text{ minutes} \le (t_{\text{future}} - t) \le 20 \text{ minutes}$$
+- **Zero Lookahead Leakage**: Features at time $t$ only contain data known at or before time $t$. Future speeds, future ratios, and future targets are never included in the input feature matrix.
+
+### 2. Feature Engineering
+The model uses 12 features derived from genuine domain measurements:
+- **Spatial**: `road_encoded` (Label-encoded Pune road identifier).
+- **Temporal**: `hour` (continuous hour), `sin_hour` & `cos_hour` (cyclical 24-hour trigonometric encoding), `day_of_week` (0–6), and `is_weekend` (binary flag).
+- **Kinematic**: `current_speed`, `free_flow_speed`, `congestion_ratio` (safely guarded against division-by-zero).
+- **Sequential Lags**: `prev_speed` (observed speed from immediately preceding time step on the same road).
+- **Operational**: `confidence` (sensor confidence), `road_closure` (closure flag).
+
+### 3. Chronological Validation & Baseline Comparison
+- **Chronological Train/Test Split**: Standard random splits leak future patterns into past training folds. The pipeline splits the dataset strictly chronologically (first 80% for training, remaining 20% for testing).
+- **Majority-Class Baseline**: The model is evaluated against a `DummyClassifier(strategy="most_frequent")` baseline to ensure genuine learning over naive guessing.
+- **Class Balancing**: Uses `class_weight="balanced"` to prevent majority-class bias.
+- **Metrics Tracked**: Test accuracy, macro F1-score, weighted F1-score, macro precision, recall, and a full confusion matrix.
+
+### 4. Training Command
+```powershell
+python scripts/train_prediction_model.py --horizon 15 --tolerance 5
+```
+
+---
+
+## 🚨 Unsupervised Machine Learning: Isolation Forest Anomaly Detection
+
+Traffic networks frequently encounter unusual disturbances such as sudden bottlenecks, extreme speed drops, or malfunctioning sensors. The system incorporates **Isolation Forest** (`src/anomaly_detection.py`) for automated outlier detection.
+
+### 1. Detection Principle
+Isolation Forest isolates anomalies by randomly partitioning feature trees. Because anomalous observations have extreme or rare feature combinations (e.g., severe speed drops below baseline capacity), they require significantly fewer tree splittings to isolate compared to normal dense clusters.
+
+### 2. Features Selected
+- `current_speed`: Absolute travel speed in km/h.
+- `free_flow_speed`: Baseline uncongested road limit.
+- `congestion_ratio`: Relative speed ratio.
+- `speed_deficit`: $\max(0, \text{free\_flow\_speed} - \text{current\_speed})$ (quantifies speed deficit below free flow).
+
+### 3. Key Parameters & Outputs
+- **Contamination Factor (`contamination=0.05`)**: Configured to flag approximately 5% of observations as statistical outliers.
+- **Anomaly Score ($0.0 - 1.0$)**: Normalized continuous score where higher values represent greater deviation.
+- **Severity Flagging**: Categorized into `Normal`, `Moderate Anomaly`, and `Severe Anomaly`.
+- **Causal Disclaimer**:
+  > ⚠️ **Important**: Isolation Forest identifies *statistical pattern anomalies*, NOT physical causes. An anomaly flags unusual traffic behavior, but cannot diagnose whether it was caused by an accident, road construction, weather, or a VIP convoy without external sensor inputs.
+
+### 4. Training Command
+```powershell
+python scripts/train_anomaly_model.py --contamination 0.05
+```
+
+---
+
+## 📊 Comparative Machine Learning Architecture
+
+The system synthesizes three complementary machine-learning paradigms:
+
+| Dimension | K-Means Clustering | Random Forest Classifier | Isolation Forest |
+| :--- | :--- | :--- | :--- |
+| **Learning Paradigm** | **Unsupervised Learning** | **Supervised Learning** | **Unsupervised Learning** |
+| **Core Objective** | Group current road conditions into operational regimes | Forecast upcoming congestion ~15 minutes in advance | Detect rare, extreme traffic deviations & bottlenecks |
+| **Input Features** | `current_speed`, `free_flow_speed`, `congestion_ratio` | Speeds, ratios, cyclical hours, road encoding, lag speed | Speeds, ratios, and speed deficit from baseline |
+| **Target Variable** | None (Discovered mathematically via centroids) | Ground-truth congestion category at $t + 15\text{m}$ | None (Partition path length in isolation trees) |
+| **Dynamic Interpretation**| Clusters dynamically mapped to Heavy, Moderate, Light | Predicts class: `low`, `moderate`, `high`, `closed` | Flagged as `Normal` or `Anomalous` with anomaly score |
+| **Operational Role** | Real-time traffic state profiling | Proactive delay management | Incident & outlier flagging |
 
 ---
 
@@ -297,28 +382,40 @@ Run the full automated test suite:
 ```powershell
 pytest -v tests/
 ```
-All 22 unit tests test:
-- **K-Means Clustering (`test_clustering.py`)**:
-  - Feature extraction and validation
-  - Missing, invalid, and non-finite value exclusion
-  - Zero and negative free-flow speed protection (prevents division by zero)
-  - Insufficient sample error handling and graceful fallbacks
-  - Cluster assignment and dynamic interpretation (Heavy, Moderate, Light) based on centroid ratio/speed
-  - Reproducibility with fixed random seed (`random_state=42`)
-  - Cluster statistics and centroid calculation in physical units
+All **32 automated unit tests** verify:
+- **Isolation Forest Anomaly Detection (`test_anomaly_detection.py`) [5 tests]**:
+  - Feature extraction, division-by-zero guards, and speed deficit computation
+  - Screen out of non-finite, negative, and zero free-flow speeds
+  - Proper flagging of injected extreme bottlenecks as anomalies
   - Model serialization and deserialization via joblib
+  - Defensive helper fallback on empty/corrupted data
+- **Random Forest Congestion Prediction (`test_congestion_prediction.py`) [5 tests]**:
+  - Feature matrix extraction, cyclical trigonometric encoding, and historical lag construction
+  - Zero lookahead leakage in $(15 \pm 5 \text{ min})$ future target matching
+  - Error handling when training dataset is undersized
+  - Inference output schema, class probabilities, and prediction format
+  - Safe prediction handling when baseline speed is zero or negative
+- **K-Means Clustering (`test_clustering.py`) [10 tests]**:
+  - Feature extraction, standardization via StandardScaler, and ratio computation
+  - Missing, invalid, and non-finite value exclusion
+  - Zero and negative free-flow speed protection
+  - Insufficient observation threshold handling
+  - Dynamic cluster interpretation (Heavy, Moderate, Light) based on learned centroid ratio and speed
+  - Centroid and cluster statistics verification in physical units
+  - Reproducibility with fixed random seed (`random_state=42`)
+  - Model serialization and deserialization
   - Dashboard helper fallback on empty, corrupted, or missing data
-- **Congestion Classification (`test_congestion.py`)**:
-  - Congestion threshold boundaries (`low`, `moderate`, `high`)
-  - Road closure override behavior
-  - Missing, negative, and zero free-flow speed edge cases
-  - Custom threshold support
-- **Data Validation & Pipelines (`test_data_validation.py`)**:
-  - Required field validation and ISO 8601 timestamp parsing
+- **Congestion Classification Rules (`test_congestion.py`) [6 tests]**:
+  - Threshold boundaries (`low`, `moderate`, `high`)
+  - Physical road closure override behavior
+  - Missing, negative, and zero speed edge cases
+  - Custom threshold dictionary support
+- **Data Pipelines & Target Generation (`test_data_validation.py`) [6 tests]**:
+  - Field validation and ISO 8601 UTC timestamp parsing
   - Malformed event rejection
-  - Duplicate record removal
-  - Tolerance-based future target generation (15-min horizon without lookahead leakage)
-  - Chronological train/test splitting integrity
+  - Chronological sorting and duplicate elimination
+  - Tolerance matching without lookahead leakage
+  - Chronological train/test split integrity
 
 ---
 

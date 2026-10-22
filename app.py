@@ -23,7 +23,7 @@ sys.path.insert(0, str(BASE_DIR))
 
 from config.settings import (
     PUNE_ROAD_POINTS, PROCESSED_DATA_DIR, DEMO_DATA_DIR, RAW_DATA_DIR, MODELS_DIR,
-    KMEANS_DEFAULT_CLUSTERS
+    KMEANS_DEFAULT_CLUSTERS, ISOLATION_FOREST_CONTAMINATION
 )
 from src.data_utils import clean_and_prepare_dataset
 from src.clustering import (
@@ -33,7 +33,8 @@ from src.clustering import (
     LABEL_MODERATE,
     LABEL_LIGHT
 )
-from train_model import TrafficPredictor
+from src.congestion_prediction import CongestionPredictor, TrafficPredictor
+from src.anomaly_detection import TrafficAnomalyDetector, detect_traffic_anomalies
 
 # ==============================================================================
 # Page Configuration & Styling
@@ -102,6 +103,22 @@ st.markdown("""
         border-radius: 6px;
         font-weight: 600;
         border: 1px solid #fca311;
+    }
+    .badge-anomaly {
+        background-color: #4a151b;
+        color: #ff6b6b;
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+        border: 1px solid #e71d36;
+    }
+    .badge-normal {
+        background-color: #0f3d3e;
+        color: #74c69d;
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-weight: 600;
+        border: 1px solid #2ec4b6;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -251,6 +268,17 @@ def main():
         step=1,
         help="Number of clusters to group traffic observations into (default: 3)."
     )
+
+    st.sidebar.markdown("---")
+    st.sidebar.header("🚨 Anomaly Detection")
+    iso_contamination = st.sidebar.slider(
+        "Expected Contamination (%):",
+        min_value=1.0,
+        max_value=15.0,
+        value=float(ISOLATION_FOREST_CONTAMINATION * 100),
+        step=0.5,
+        help="Expected percentage of unusual traffic anomalies (default: 5.0%)."
+    ) / 100.0
 
     # Filter by Road
     if selected_road != "All Roads":
@@ -604,55 +632,82 @@ def main():
     st.markdown("---")
 
     # ==============================================================================
-    # 5. Machine Learning 15-Minute Congestion Forecaster
+    # 5. Congestion Prediction — Random Forest (Supervised Forecasting)
     # ==============================================================================
-    st.subheader("🔮 15-Minute Future Congestion Forecaster")
+    st.subheader("🔮 Congestion Prediction — Random Forest")
     st.write(
-        "Predicts anticipated congestion **15 minutes into the future** "
-        "using the trained machine-learning model (RandomForestClassifier)."
+        "Forecasts anticipated congestion **~15 minutes into the future** "
+        "using a supervised `RandomForestClassifier` trained with chronological validation, "
+        "cyclical hour encoding, road embeddings, and historical speed lags."
     )
 
     predictor = TrafficPredictor()
     if not predictor.is_ready():
-        st.info("⚠️ Trained prediction model not found in `models/`. Run `python train_model.py` to train and enable predictions.")
+        st.warning("⚠️ Trained prediction model not found in `models/`. Run `python scripts/train_prediction_model.py` to train and enable predictions.")
     else:
         meta = predictor.metadata
-        model_badge = "🧪 Synthetic Demo Baseline" if meta.get("is_synthetic") else "📡 Live Trained Model"
-        st.caption(f"Active Model: **{meta.get('model_type')}** | Test Accuracy: **{meta.get('test_accuracy', 0)*100:.1f}%** | Dataset: **{model_badge}**")
+        model_badge = "🧪 Synthetic Demo Dataset" if meta.get("is_synthetic") else "📡 Live TomTom API Dataset"
+        
+        # Display Training & Evaluation Metrics
+        acc = meta.get("test_accuracy", 0) * 100
+        base_acc = meta.get("baseline_accuracy", 0) * 100
+        macro_f1 = meta.get("macro_f1", 0)
+        weighted_f1 = meta.get("weighted_f1", 0)
 
+        rf_m1, rf_m2, rf_m3, rf_m4 = st.columns(4)
+        with rf_m1:
+            st.metric("Test Accuracy", f"{acc:.1f}%", help="Chronologically evaluated test accuracy on held-out observations.")
+        with rf_m2:
+            st.metric("Majority Baseline", f"{base_acc:.1f}%", help="Accuracy of a naive DummyClassifier always predicting the majority class.")
+        with rf_m3:
+            st.metric("Macro F1-Score", f"{macro_f1:.3f}", help="Unweighted mean of F1-scores across all classes.")
+        with rf_m4:
+            st.metric("Evaluation Dataset", model_badge)
+
+        st.caption(
+            f"ℹ️ **Evaluation Integrity**: Model was evaluated on **{meta.get('test_samples', 0):,} held-out observations** "
+            f"using strict chronological splitting (up to split time: `{meta.get('split_timestamp', 'N/A')}`) "
+            f"to guarantee zero future lookahead leakage."
+        )
+
+        # Interactive Forecast Simulator
+        st.markdown("##### 🧪 15-Minute Future Horizon Simulator")
         p_col1, p_col2, p_col3 = st.columns(3)
         with p_col1:
-            pred_road = st.selectbox("Select Target Road:", [pt["road_id"] for pt in PUNE_ROAD_POINTS], index=0)
+            pred_road = st.selectbox("Target Corridor:", [pt["road_id"] for pt in PUNE_ROAD_POINTS], index=0)
         with p_col2:
             default_free = next((pt["typical_free_flow_speed"] for pt in PUNE_ROAD_POINTS if pt["road_id"] == pred_road), 50.0)
-            in_cur_spd = st.slider("Simulate Current Speed (km/h):", min_value=0.0, max_value=80.0, value=22.0, step=1.0)
+            in_cur_spd = st.slider("Observed Current Speed (km/h):", min_value=0.0, max_value=80.0, value=22.0, step=1.0)
         with p_col3:
             in_free_spd = st.slider("Baseline Free-Flow Speed (km/h):", min_value=20.0, max_value=80.0, value=default_free, step=1.0)
 
-        if st.button("🔮 Forecast 15-Min Congestion", type="primary"):
+        sim_button = st.button("🔮 Compute 15-Minute Forecast", type="primary")
+        if sim_button:
             pred_res = predictor.predict(
                 road_id=pred_road,
                 current_speed=in_cur_spd,
                 free_flow_speed=in_free_spd
             )
 
-            level_pred = pred_res.get("predicted_congestion_level_15m", "unknown").upper()
+            level_pred = pred_res.get("predicted_congestion_level_15m", "unknown").lower()
             prob_dict = pred_res.get("probabilities", {})
+            forecast_time = pred_res.get("forecast_timestamp_utc", "t + 15m")
 
             col_res1, col_res2 = st.columns([1, 2])
             with col_res1:
-                st.markdown(f"### Predicted Status (in 15 mins):")
-                color = COLOR_MAP.get(level_pred.lower(), "#6c757d")
+                st.markdown(f"**Predicted Status (at {forecast_time[:19]} UTC):**")
+                color = COLOR_MAP.get(level_pred, "#6c757d")
                 st.markdown(
-                    f"<div style='background-color: {color}; color: white; padding: 18px 24px; "
-                    f"border-radius: 8px; font-size: 1.6rem; font-weight: bold; text-align: center;'>"
-                    f"{level_pred} CONGESTION</div>",
+                    f"<div style='background-color: {color}; color: white; padding: 18px 20px; "
+                    f"border-radius: 8px; font-size: 1.4rem; font-weight: bold; text-align: center;'>"
+                    f"{level_pred.upper()} CONGESTION</div>",
                     unsafe_allow_html=True
                 )
-                st.write(f"Current Speed Ratio: **{pred_res.get('current_ratio'):.2f}**")
+                curr_ratio = pred_res.get('current_ratio', 0.0)
+                st.write(f"Current Speed Ratio: **{curr_ratio:.2f}** | Forecast Horizon: **~15 mins**")
 
             with col_res2:
-                st.markdown("### Class Confidence Probabilities:")
+                st.markdown("**Class Confidence Distribution:**")
                 prob_df = pd.DataFrame(list(prob_dict.items()), columns=["Level", "Probability"])
                 fig_prob = px.bar(
                     prob_df,
@@ -677,7 +732,153 @@ def main():
     st.markdown("---")
 
     # ==============================================================================
-    # 6. Recent Observations Table
+    # 6. Traffic Anomaly Detection — Isolation Forest
+    # ==============================================================================
+    st.subheader("🚨 Traffic Anomaly Detection — Isolation Forest")
+    st.write(
+        "Detects rare and unexpected traffic observations (such as sudden speed drops, severe bottlenecks "
+        "relative to baseline capacity, or unusual sensor readings) using an unsupervised `IsolationForest`."
+    )
+
+    # Anomaly scope selection
+    anom_annotated, anom_stats, anom_detector, anom_err = detect_traffic_anomalies(
+        df=candidate_df,
+        contamination=float(iso_contamination),
+        use_saved_model=True
+    )
+
+    if anom_err:
+        st.warning(f"⚠️ Anomaly detection unavailable: {anom_err}")
+    else:
+        # Anomaly KPI Cards
+        ak1, ak2, ak3, ak4 = st.columns(4)
+        with ak1:
+            st.metric("Analyzed Records", f"{anom_stats.get('total_observations', 0):,}")
+        with ak2:
+            st.metric("Normal Observations", f"{anom_stats.get('normal_count', 0):,}")
+        with ak3:
+            st.metric("Flagged Anomalies", f"{anom_stats.get('anomaly_count', 0):,}", delta_color="inverse")
+        with ak4:
+            st.metric("Anomaly Rate", f"{anom_stats.get('anomaly_percentage', 0):.2f}%", help="Percentage of observations flagged as statistical anomalies.")
+
+        # Interactive Anomaly Plotly Chart & Table
+        col_anom_chart, col_anom_exp = st.columns([3, 2])
+
+        with col_anom_chart:
+            st.markdown("##### 📍 Statistical Outlier Visualization")
+            
+            anom_color_map = {
+                "Normal": "#2ec4b6",
+                "Anomalous": "#e71d36"
+            }
+
+            fig_anom = px.scatter(
+                anom_annotated,
+                x="current_speed",
+                y="congestion_ratio",
+                color="anomaly_label",
+                symbol="anomaly_label",
+                symbol_map={"Normal": "circle", "Anomalous": "diamond"},
+                color_discrete_map=anom_color_map,
+                size="speed_deficit",
+                size_max=16,
+                hover_name="road_name",
+                hover_data={
+                    "current_speed": True,
+                    "free_flow_speed": True,
+                    "congestion_ratio": ":.3f",
+                    "speed_deficit": ":.1f",
+                    "anomaly_score": ":.3f",
+                    "anomaly_severity": True,
+                    "data_source": True
+                },
+                labels={
+                    "current_speed": "Current Speed (km/h)",
+                    "congestion_ratio": "Congestion Ratio",
+                    "anomaly_label": "Observation Status"
+                },
+                height=400
+            )
+            fig_anom.update_layout(
+                paper_bgcolor="#0b132b",
+                plot_bgcolor="#162038",
+                font=dict(color="#e0e6ed"),
+                xaxis=dict(gridcolor="#28385e", title="Current Speed (km/h)"),
+                yaxis=dict(gridcolor="#28385e", title="Congestion Ratio (Current / Free-Flow)"),
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font=dict(color="#e0e6ed")),
+                margin=dict(l=30, r=20, t=30, b=30)
+            )
+            st.plotly_chart(fig_anom, use_container_width=True)
+
+        with col_anom_exp:
+            st.markdown("##### 🔍 How Isolation Forest Works")
+            st.markdown("""
+            - **Isolation Principle**: Normal traffic data points cluster densely around expected free-flow speeds. Anomalous observations (severe bottlenecks or sudden drops) are sparse and are isolated with very few random tree partitions.
+            - **Anomaly Score ($0.0 - 1.0$)**: Scores $> 0.50$ indicate increasing statistical deviation from the baseline model.
+            - **Causal Disclaimer**:
+              > ⚠️ **Important**: Isolation Forest identifies *statistical pattern deviations*, NOT root causes. A flagged anomaly could represent a bottleneck, road closure, sensor calibration artifact, or VIP convoy, but should not automatically be labeled an accident without external verification.
+            """)
+
+        # Table of Flagged Anomalies
+        st.markdown("##### 🚨 Flagged Anomalous Traffic Observations")
+        flagged_df = anom_annotated[anom_annotated["is_anomaly"] == True]
+        if flagged_df.empty:
+            st.success("✅ No statistical anomalies detected in the current observation window.")
+        else:
+            anom_cols = [
+                "timestamp", "road_name", "current_speed", "free_flow_speed",
+                "congestion_ratio", "speed_deficit", "anomaly_score", "anomaly_severity", "data_source"
+            ]
+            avail_anom_cols = [c for c in anom_cols if c in flagged_df.columns]
+            st.dataframe(
+                flagged_df.sort_values("anomaly_score", ascending=False)[avail_anom_cols],
+                use_container_width=True,
+                height=220
+            )
+
+    st.markdown("---")
+
+    # ==============================================================================
+    # 7. Comparative Model Architecture & Evaluation
+    # ==============================================================================
+    st.subheader("📊 Comparative Machine Learning Architecture")
+    st.write(
+        "A multi-model synthesis combining unsupervised data mining, supervised forecasting, "
+        "and unsupervised anomaly detection across Pune's road corridors."
+    )
+
+    comparison_data = [
+        {
+            "Algorithm": "K-Means Clustering",
+            "Learning Paradigm": "Unsupervised Learning",
+            "Core Objective": "Discover latent road condition regimes (Heavy, Moderate, Light)",
+            "Key Features Used": "current_speed, free_flow_speed, congestion_ratio",
+            "Output": "Discrete Cluster ID & Semantic Condition Label",
+            "Operational Role": "Current Traffic State Profiling"
+        },
+        {
+            "Algorithm": "Random Forest Classifier",
+            "Learning Paradigm": "Supervised Learning",
+            "Core Objective": "Predict future congestion level ~15 minutes in advance",
+            "Key Features Used": "Speeds, ratios, cyclical hour (sin/cos), day of week, lag speed",
+            "Output": "Future Congestion Category & Class Confidence",
+            "Operational Role": "Proactive Congestion Forecasting"
+        },
+        {
+            "Algorithm": "Isolation Forest",
+            "Learning Paradigm": "Unsupervised Learning",
+            "Core Objective": "Detect statistically rare speed drops and abnormal patterns",
+            "Key Features Used": "current_speed, free_flow_speed, congestion_ratio, speed_deficit",
+            "Output": "Anomaly Indicator (Normal/Anomalous) & Anomaly Score",
+            "Operational Role": "Outlier & Incident Detection"
+        }
+    ]
+    st.dataframe(pd.DataFrame(comparison_data), use_container_width=True, hide_index=True)
+
+    st.markdown("---")
+
+    # ==============================================================================
+    # 8. Recent Observations Table
     # ==============================================================================
     st.subheader("📋 Latest Traffic Observations")
     display_cols = [

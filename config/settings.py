@@ -141,5 +141,22 @@ KMEANS_MIN_OBSERVATIONS = int(os.getenv("KMEANS_MIN_OBSERVATIONS", "6"))
 KMEANS_FEATURE_COLS = ["current_speed", "free_flow_speed", "congestion_ratio"]
 KMEANS_MODEL_PATH = MODELS_DIR / "kmeans_traffic_model.joblib"
 
+# ==============================================================================
+# Isolation Forest Settings (Unsupervised Anomaly Detection)
+# ==============================================================================
+# Contamination factor: expected proportion of outliers/anomalies in urban traffic (~5%)
+ISOLATION_FOREST_CONTAMINATION = float(os.getenv("ISOLATION_FOREST_CONTAMINATION", "0.05"))
+ISOLATION_FOREST_RANDOM_STATE = int(os.getenv("ISOLATION_FOREST_RANDOM_STATE", "42"))
+ISOLATION_FOREST_MODEL_PATH = MODELS_DIR / "isolation_forest_model.joblib"
+ISOLATION_FOREST_METADATA_PATH = MODELS_DIR / "anomaly_metadata.json"
+ISOLATION_FOREST_FEATURE_COLS = ["current_speed", "free_flow_speed", "congestion_ratio", "speed_deficit"]
+
+# ==============================================================================
+# Random Forest Congestion Prediction Settings (Supervised Forecasting)
+# ==============================================================================
+CONGESTION_MODEL_PATH = MODELS_DIR / "congestion_model.joblib"
+ROAD_ENCODER_PATH = MODELS_DIR / "road_encoder.joblib"
+MODEL_METADATA_PATH = MODELS_DIR / "model_metadata.json"
+
 # TomTom Flow Segment Data API Endpoint
 TOMTOM_FLOW_ENDPOINT = "https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json"
