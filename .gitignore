@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+
+# Environment Variables & Secrets
+.env
+!.env.example
+
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Spark / Hadoop / Checkpoints
+spark-warehouse/
+metastore_db/
+derby.log
+checkpoint/
+checkpoints/
+data/processed/_spark_metadata/
+data/processed/.checkpoint/
+data/processed/parquet_stream/
+*.crc
+
+# Data & Models (keep folders, ignore generated files if desired)
+logs/
+*.log
+.pytest_cache/
+
+# Streamlit
+.streamlit/

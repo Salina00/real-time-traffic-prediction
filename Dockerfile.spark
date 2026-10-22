@@ -1,0 +1,27 @@
+# Dockerfile for Apache Spark Structured Streaming
+FROM apache/spark:3.5.1-python3
+
+USER root
+
+WORKDIR /app
+
+# Install Python dependencies needed by the streaming job
+RUN pip install --no-cache-dir \
+    python-dotenv>=1.0.0 \
+    kafka-python-ng>=2.2.2 \
+    pandas>=2.2.0 \
+    pyarrow>=15.0.0
+
+# Copy application source code
+COPY config /app/config
+COPY src /app/src
+COPY spark_streaming.py /app/spark_streaming.py
+
+# Create directory structure for data outputs
+RUN mkdir -p /app/data/processed/checkpoints /app/logs
+
+# Set default command to run PySpark Structured Streaming with Kafka connector
+ENTRYPOINT ["spark-submit", \
+    "--packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1", \
+    "--master", "local[*]", \
+    "/app/spark_streaming.py"]
