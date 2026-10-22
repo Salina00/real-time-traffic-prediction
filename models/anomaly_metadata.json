@@ -1,0 +1,15 @@
+{
+  "model_type": "IsolationForest",
+  "contamination": 0.05,
+  "random_state": 42,
+  "n_estimators": 100,
+  "feature_cols": [
+    "current_speed",
+    "free_flow_speed",
+    "congestion_ratio",
+    "speed_deficit"
+  ],
+  "training_sample_count": 6912,
+  "data_source_label": "Synthetic Demo Dataset",
+  "explanation": "Isolation Forest isolates anomalies by randomly partitioning feature trees. Observations requiring fewer splittings are flagged as anomalies. Detected anomalies represent unusual traffic conditions, not their physical causes."
+}
