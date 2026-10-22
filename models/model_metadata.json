@@ -1,0 +1,33 @@
+{
+  "model_type": "RandomForestClassifier",
+  "horizon_minutes": 15,
+  "tolerance_minutes": 5,
+  "is_synthetic": true,
+  "data_label": "Synthetic Demo Dataset",
+  "training_samples": 5516,
+  "test_samples": 1380,
+  "split_timestamp": "2026-10-21 12:29:58.908162+00:00",
+  "test_accuracy": 0.4007,
+  "classes": [
+    "closed",
+    "high",
+    "low",
+    "moderate"
+  ],
+  "feature_names": [
+    "road_encoded",
+    "hour",
+    "sin_hour",
+    "cos_hour",
+    "day_of_week",
+    "is_weekend",
+    "current_speed",
+    "free_flow_speed",
+    "congestion_ratio",
+    "prev_speed",
+    "confidence",
+    "road_closure"
+  ],
+  "trained_at_utc": "2026-10-22T03:05:54.801101+00:00",
+  "disclaimer": "Model trained on synthetic demonstration data. Real-world accuracy requires continuous long-term observation collection from live TomTom API."
+}
