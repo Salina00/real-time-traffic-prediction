@@ -97,10 +97,10 @@ def extract_features(
     df["confidence"] = pd.to_numeric(df.get("confidence", 1.0), errors="coerce").fillna(1.0).astype(float)
     df["road_closure"] = df.get("road_closure", False).astype(int)
 
-    # 4. Calculate lag feature (previous observed speed on same road)
-    df_sorted = df.sort_values(by=["road_id", "timestamp"]).reset_index(drop=True)
-    df_sorted["prev_speed"] = df_sorted.groupby("road_id")["current_speed"].shift(1)
-    df_sorted["prev_speed"] = df_sorted["prev_speed"].fillna(df_sorted["current_speed"]).astype(float)
+    # 4. Calculate lag feature (previous observed speed on same road) without scrambling row index
+    sorted_idx = df.sort_values(by=["road_id", "timestamp"]).index
+    prev_speed_series = df.loc[sorted_idx].groupby("road_id")["current_speed"].shift(1)
+    df["prev_speed"] = prev_speed_series.reindex(df.index).fillna(df["current_speed"]).astype(float)
 
     feature_cols = [
         "road_encoded",
@@ -117,7 +117,7 @@ def extract_features(
         "road_closure",
     ]
 
-    return df_sorted[feature_cols], road_encoder
+    return df[feature_cols].copy(), road_encoder
 
 
 def train_and_evaluate_congestion_model(

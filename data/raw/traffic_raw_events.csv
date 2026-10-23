@@ -191,3 +191,483 @@ timestamp,road_id,road_name,latitude,longitude,frc,current_speed,free_flow_speed
 2026-10-22T17:19:51.345193+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
 2026-10-22T17:19:51.345193+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
 2026-10-22T17:19:51.345193+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:20:56.850378+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.627464,True,tomtom,0.9286,closed
+2026-10-22T17:20:56.850378+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:20:56.850378+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.733913,True,tomtom,0.7692,closed
+2026-10-22T17:20:56.850378+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:20:56.850378+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:20:56.850378+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:20:56.850378+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:20:56.850378+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:22:02.522279+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.610993,True,tomtom,0.9286,closed
+2026-10-22T17:22:02.522279+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:22:02.522279+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.727552,True,tomtom,0.7692,closed
+2026-10-22T17:22:02.522279+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:22:02.522279+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:22:02.522279+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:22:02.522279+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:22:02.522279+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:23:07.959578+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.602758,True,tomtom,0.9286,closed
+2026-10-22T17:23:07.959578+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:23:07.959578+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.703842,True,tomtom,0.7692,closed
+2026-10-22T17:23:07.959578+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:23:07.959578+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:23:07.959578+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:23:07.959578+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:23:07.959578+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:24:13.273904+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.610993,True,tomtom,0.9286,closed
+2026-10-22T17:24:13.273904+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:24:13.273904+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.69112,True,tomtom,0.7692,closed
+2026-10-22T17:24:13.273904+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:24:13.273904+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:24:13.273904+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:24:13.273904+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:24:13.273904+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:25:19.141531+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.617796,True,tomtom,0.9286,closed
+2026-10-22T17:25:19.141531+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:25:19.141531+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.678398,True,tomtom,0.7692,closed
+2026-10-22T17:25:19.141531+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:25:19.141531+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:25:19.141531+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:25:19.141531+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:25:19.141531+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:26:24.923179+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.601326,True,tomtom,0.9286,closed
+2026-10-22T17:26:24.923179+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:26:24.923179+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.636473,True,tomtom,0.7692,closed
+2026-10-22T17:26:24.923179+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:26:24.923179+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:26:24.923179+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:26:24.923179+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:26:24.923179+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:27:31.546513+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.601326,True,tomtom,0.9286,closed
+2026-10-22T17:27:31.546513+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:27:31.546513+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.608065,True,tomtom,0.7692,closed
+2026-10-22T17:27:31.546513+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:27:31.546513+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:27:31.546513+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:27:31.546513+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:27:31.546513+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:28:37.676848+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,13.0,874,874,0.575187,True,tomtom,1.0,closed
+2026-10-22T17:28:37.676848+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:28:37.676848+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,11.0,13.0,508,430,0.582621,True,tomtom,0.8462,closed
+2026-10-22T17:28:37.676848+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:28:37.676848+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:28:37.676848+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:28:37.676848+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:28:37.676848+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:29:43.607999+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,13.0,874,874,0.566952,True,tomtom,1.0,closed
+2026-10-22T17:29:43.607999+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:29:43.607999+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,11.0,13.0,508,430,0.582621,True,tomtom,0.8462,closed
+2026-10-22T17:29:43.607999+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:29:43.607999+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:29:43.607999+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:29:43.607999+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:29:43.607999+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:30:52.050135+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,13.0,874,874,0.564088,True,tomtom,1.0,closed
+2026-10-22T17:30:52.050135+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:30:52.050135+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,11.0,13.0,508,430,0.601704,True,tomtom,0.8462,closed
+2026-10-22T17:30:52.050135+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:30:52.050135+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:30:52.050135+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:30:52.050135+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:30:52.050135+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:40:12.783454+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC1,37.8,43.7,139,120,0.86,False,synthetic_demo,0.865,low
+2026-10-22T17:40:12.783454+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC1,42.8,48.6,136,120,0.96,False,synthetic_demo,0.8807,low
+2026-10-22T17:40:12.783454+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC1,37.8,42.7,135,119,0.94,False,synthetic_demo,0.8852,low
+2026-10-22T17:40:12.783454+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC1,59.1,61.1,124,120,0.91,False,synthetic_demo,0.9673,low
+2026-10-22T17:40:12.783454+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC1,51.7,55.4,128,120,0.96,False,synthetic_demo,0.9332,low
+2026-10-22T17:40:12.783454+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,47.7,49.1,123,120,0.98,False,synthetic_demo,0.9715,low
+2026-10-22T17:40:12.783454+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC1,45.0,47.4,126,120,0.97,False,synthetic_demo,0.9494,low
+2026-10-22T17:40:12.783454+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC1,59.2,63.5,128,120,0.97,False,synthetic_demo,0.9323,low
+2026-10-22T17:41:13.341992+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,1.0,closed
+2026-10-22T17:41:13.341992+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:41:13.341992+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.604234,True,tomtom,1.0,closed
+2026-10-22T17:41:13.341992+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:41:13.341992+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:41:13.341992+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:41:13.341992+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:41:13.341992+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:42:20.038406+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,1.0,closed
+2026-10-22T17:42:20.038406+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:42:20.038406+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.598307,True,tomtom,1.0,closed
+2026-10-22T17:42:20.038406+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:42:20.038406+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:42:20.038406+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:42:20.038406+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:42:20.038406+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:43:25.825816+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,1.0,closed
+2026-10-22T17:43:25.825816+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:43:25.825816+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.604234,True,tomtom,1.0,closed
+2026-10-22T17:43:25.825816+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:43:25.825816+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:43:25.825816+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:43:25.825816+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:43:25.825816+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:44:31.971679+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,1.0,closed
+2026-10-22T17:44:31.971679+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:44:31.971679+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.604234,True,tomtom,1.0,closed
+2026-10-22T17:44:31.971679+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:44:31.971679+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:44:31.971679+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:44:31.971679+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:44:31.971679+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:45:37.631167+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,1.0,closed
+2026-10-22T17:45:37.631167+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:45:37.631167+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.645726,True,tomtom,1.0,closed
+2026-10-22T17:45:37.631167+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:45:37.631167+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:45:37.631167+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:45:37.631167+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:45:37.631167+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:46:43.939727+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,1.0,closed
+2026-10-22T17:46:43.939727+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:46:43.939727+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.693217,True,tomtom,1.0,closed
+2026-10-22T17:46:43.939727+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:46:43.939727+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:46:43.939727+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:46:43.939727+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:46:43.939727+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:47:49.984047+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.529715,True,tomtom,1.0,closed
+2026-10-22T17:47:49.984047+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:47:49.984047+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.705939,True,tomtom,1.0,closed
+2026-10-22T17:47:49.984047+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:47:49.984047+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:47:49.984047+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:47:49.984047+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:47:49.984047+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:48:55.600445+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,1.0,closed
+2026-10-22T17:48:55.600445+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:48:55.600445+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,1.0,closed
+2026-10-22T17:48:55.600445+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:48:55.600445+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:48:55.600445+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:48:55.600445+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:48:55.600445+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:50:00.689421+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,1.0,closed
+2026-10-22T17:50:00.689421+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:50:00.689421+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,1.0,closed
+2026-10-22T17:50:00.689421+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:50:00.689421+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:50:00.689421+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:50:00.689421+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:50:00.689421+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:51:06.764730+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,1.0,closed
+2026-10-22T17:51:06.764730+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:51:06.764730+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,1.0,closed
+2026-10-22T17:51:06.764730+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:51:06.764730+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:51:06.764730+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:51:06.764730+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:51:06.764730+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:52:12.381662+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,1.0,closed
+2026-10-22T17:52:12.381662+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:52:12.381662+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,1.0,closed
+2026-10-22T17:52:12.381662+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:52:12.381662+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:52:12.381662+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:52:12.381662+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:52:12.381662+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:53:18.296081+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,1.0,closed
+2026-10-22T17:53:18.296081+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:53:18.296081+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,1.0,closed
+2026-10-22T17:53:18.296081+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:53:18.296081+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:53:18.296081+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:53:18.296081+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:53:18.296081+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:54:23.404684+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,1.0,closed
+2026-10-22T17:54:23.404684+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:54:23.404684+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,1.0,closed
+2026-10-22T17:54:23.404684+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:54:23.404684+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:54:23.404684+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:54:23.404684+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:54:23.404684+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:55:29.532178+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,1.0,closed
+2026-10-22T17:55:29.532178+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:55:29.532178+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,1.0,closed
+2026-10-22T17:55:29.532178+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:55:29.532178+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:55:29.532178+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:55:29.532178+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:55:29.532178+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:56:35.337231+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,1.0,closed
+2026-10-22T17:56:35.337231+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:56:35.337231+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,1.0,closed
+2026-10-22T17:56:35.337231+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:56:35.337231+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:56:35.337231+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:56:35.337231+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:56:35.337231+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:57:44.301339+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,1.0,closed
+2026-10-22T17:57:44.301339+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:57:44.301339+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,1.0,closed
+2026-10-22T17:57:44.301339+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:57:44.301339+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:57:44.301339+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:57:44.301339+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:57:44.301339+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:58:49.725653+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.530163,True,tomtom,0.9333,closed
+2026-10-22T17:58:49.725653+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:58:49.725653+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,1.0,closed
+2026-10-22T17:58:49.725653+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:58:49.725653+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:58:49.725653+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:58:49.725653+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:58:49.725653+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T17:59:55.333644+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.549588,True,tomtom,1.0,closed
+2026-10-22T17:59:55.333644+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T17:59:55.333644+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,1.0,closed
+2026-10-22T17:59:55.333644+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T17:59:55.333644+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T17:59:55.333644+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T17:59:55.333644+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T17:59:55.333644+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:01:00.510603+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.554869,True,tomtom,0.9333,closed
+2026-10-22T18:01:00.510603+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:01:00.510603+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.696614,True,tomtom,1.0,closed
+2026-10-22T18:01:00.510603+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:01:00.510603+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:01:00.510603+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:01:00.510603+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:01:00.510603+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:02:06.093827+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.56015,True,tomtom,0.9333,closed
+2026-10-22T18:02:06.093827+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:02:06.093827+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.693217,True,tomtom,1.0,closed
+2026-10-22T18:02:06.093827+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:02:06.093827+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:02:06.093827+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:02:06.093827+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:02:06.093827+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:03:12.040808+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.570712,True,tomtom,0.9286,closed
+2026-10-22T18:03:12.040808+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:03:12.040808+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.69618,True,tomtom,1.0,closed
+2026-10-22T18:03:12.040808+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:03:12.040808+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:03:12.040808+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:03:12.040808+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:03:12.040808+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:04:17.491266+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.570712,True,tomtom,0.9286,closed
+2026-10-22T18:04:17.491266+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:04:17.491266+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.708902,True,tomtom,1.0,closed
+2026-10-22T18:04:17.491266+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:04:17.491266+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:04:17.491266+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:04:17.491266+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:04:17.491266+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:05:23.366784+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.570712,True,tomtom,1.0,closed
+2026-10-22T18:05:23.366784+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:05:23.366784+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.708902,True,tomtom,1.0,closed
+2026-10-22T18:05:23.366784+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:05:23.366784+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:05:23.366784+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:05:23.366784+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:05:23.366784+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:06:28.897674+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.570712,True,tomtom,0.9333,closed
+2026-10-22T18:06:28.897674+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:06:28.897674+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.708902,True,tomtom,1.0,closed
+2026-10-22T18:06:28.897674+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:06:28.897674+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:06:28.897674+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:06:28.897674+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:06:28.897674+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:07:34.639721+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.575993,True,tomtom,0.9333,closed
+2026-10-22T18:07:34.639721+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:07:34.639721+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.711866,True,tomtom,1.0,closed
+2026-10-22T18:07:34.639721+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:07:34.639721+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:07:34.639721+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:07:34.639721+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:07:34.639721+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:08:40.528306+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.60768,True,tomtom,0.9333,closed
+2026-10-22T18:08:40.528306+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:08:40.528306+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.705939,True,tomtom,1.0,closed
+2026-10-22T18:08:40.528306+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:08:40.528306+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:08:40.528306+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:08:40.528306+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:08:40.528306+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:09:46.034429+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.638926,True,tomtom,1.0,closed
+2026-10-22T18:09:46.034429+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:09:46.034429+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.705939,True,tomtom,1.0,closed
+2026-10-22T18:09:46.034429+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:09:46.034429+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:09:46.034429+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:09:46.034429+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:09:46.034429+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:10:51.916606+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.638926,True,tomtom,1.0,closed
+2026-10-22T18:10:51.916606+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:10:51.916606+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,1.0,closed
+2026-10-22T18:10:51.916606+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:10:51.916606+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:10:51.916606+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:10:51.916606+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:10:51.916606+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:11:57.168078+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,15.0,15.0,757,757,0.630774,True,tomtom,1.0,closed
+2026-10-22T18:11:57.168078+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:11:57.168078+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.705939,True,tomtom,1.0,closed
+2026-10-22T18:11:57.168078+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:11:57.168078+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:11:57.168078+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:11:57.168078+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:11:57.168078+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:13:03.097261+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,15.0,15.0,757,757,0.637487,True,tomtom,1.0,closed
+2026-10-22T18:13:03.097261+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:13:03.097261+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.718661,True,tomtom,1.0,closed
+2026-10-22T18:13:03.097261+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:13:03.097261+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:13:03.097261+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:13:03.097261+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:13:03.097261+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:14:08.015815+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.645632,True,tomtom,1.0,closed
+2026-10-22T18:14:08.015815+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:14:08.015815+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.674205,True,tomtom,1.0,closed
+2026-10-22T18:14:08.015815+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:14:08.015815+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:14:08.015815+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:14:08.015815+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:14:08.015815+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:15:13.576534+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.645632,True,tomtom,1.0,closed
+2026-10-22T18:15:13.576534+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:15:13.576534+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.661483,True,tomtom,1.0,closed
+2026-10-22T18:15:13.576534+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:15:13.576534+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:15:13.576534+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:15:13.576534+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:15:13.576534+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:16:19.378552+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.646618,True,tomtom,1.0,closed
+2026-10-22T18:16:19.378552+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:16:19.378552+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.655122,True,tomtom,1.0,closed
+2026-10-22T18:16:19.378552+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:16:19.378552+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:16:19.378552+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:16:19.378552+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:16:19.378552+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:17:24.904808+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.655209,True,tomtom,1.0,closed
+2026-10-22T18:17:24.904808+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:17:24.904808+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.655122,True,tomtom,1.0,closed
+2026-10-22T18:17:24.904808+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:17:24.904808+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:17:24.904808+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:17:24.904808+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:17:24.904808+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:18:30.682676+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.653777,True,tomtom,1.0,closed
+2026-10-22T18:18:30.682676+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:18:30.682676+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.655122,True,tomtom,1.0,closed
+2026-10-22T18:18:30.682676+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:18:30.682676+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:18:30.682676+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:18:30.682676+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:18:30.682676+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:19:36.395561+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.659058,True,tomtom,1.0,closed
+2026-10-22T18:19:36.395561+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:19:36.395561+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.648761,True,tomtom,1.0,closed
+2026-10-22T18:19:36.395561+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:19:36.395561+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:19:36.395561+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:19:36.395561+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:19:36.395561+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:20:42.447404+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.659058,True,tomtom,1.0,closed
+2026-10-22T18:20:42.447404+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:20:42.447404+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.6424,True,tomtom,1.0,closed
+2026-10-22T18:20:42.447404+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:20:42.447404+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:20:42.447404+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:20:42.447404+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:20:42.447404+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:21:48.224314+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.659058,True,tomtom,1.0,closed
+2026-10-22T18:21:48.224314+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:21:48.224314+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.6424,True,tomtom,1.0,closed
+2026-10-22T18:21:48.224314+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:21:48.224314+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:21:48.224314+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:21:48.224314+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:21:48.224314+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:22:54.729263+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.665771,True,tomtom,1.0,closed
+2026-10-22T18:22:54.729263+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:22:54.729263+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.6424,True,tomtom,1.0,closed
+2026-10-22T18:22:54.729263+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:22:54.729263+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:22:54.729263+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:22:54.729263+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:22:54.729263+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:24:00.707352+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.66049,True,tomtom,1.0,closed
+2026-10-22T18:24:00.707352+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:24:00.707352+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.66488,True,tomtom,0.9231,closed
+2026-10-22T18:24:00.707352+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:24:00.707352+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:24:00.707352+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:24:00.707352+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:24:00.707352+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:25:06.173118+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.644647,True,tomtom,1.0,closed
+2026-10-22T18:25:06.173118+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:25:06.173118+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.671241,True,tomtom,0.9231,closed
+2026-10-22T18:25:06.173118+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:25:06.173118+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:25:06.173118+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:25:06.173118+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:25:06.173118+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:26:11.963013+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.639366,True,tomtom,1.0,closed
+2026-10-22T18:26:11.963013+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:26:11.963013+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.671241,True,tomtom,1.0,closed
+2026-10-22T18:26:11.963013+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:26:11.963013+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:26:11.963013+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:26:11.963013+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:26:11.963013+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:27:17.304823+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,15.0,15.0,757,757,0.634085,True,tomtom,1.0,closed
+2026-10-22T18:27:17.304823+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:27:17.304823+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.671241,True,tomtom,1.0,closed
+2026-10-22T18:27:17.304823+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:27:17.304823+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:27:17.304823+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:27:17.304823+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:27:17.304823+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:28:22.754332+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.646086,True,tomtom,1.0,closed
+2026-10-22T18:28:22.754332+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:28:22.754332+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.652158,True,tomtom,1.0,closed
+2026-10-22T18:28:22.754332+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:28:22.754332+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:28:22.754332+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:28:22.754332+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:28:22.754332+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:29:28.214212+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.646086,True,tomtom,1.0,closed
+2026-10-22T18:29:28.214212+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:29:28.214212+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.652158,True,tomtom,1.0,closed
+2026-10-22T18:29:28.214212+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:29:28.214212+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:29:28.214212+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:29:28.214212+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:29:28.214212+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:30:33.827036+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.637851,True,tomtom,1.0,closed
+2026-10-22T18:30:33.827036+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:30:33.827036+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.636473,True,tomtom,1.0,closed
+2026-10-22T18:30:33.827036+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:30:33.827036+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:30:33.827036+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:30:33.827036+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:30:33.827036+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:31:39.925728+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.637851,True,tomtom,1.0,closed
+2026-10-22T18:31:39.925728+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:31:39.925728+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.636473,True,tomtom,1.0,closed
+2026-10-22T18:31:39.925728+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:31:39.925728+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:31:39.925728+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:31:39.925728+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:31:39.925728+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:32:46.255569+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.646086,True,tomtom,1.0,closed
+2026-10-22T18:32:46.255569+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:32:46.255569+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.598307,True,tomtom,1.0,closed
+2026-10-22T18:32:46.255569+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:32:46.255569+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:32:46.255569+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:32:46.255569+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:32:46.255569+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low
+2026-10-22T18:33:52.081788+00:00,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.662557,True,tomtom,1.0,closed
+2026-10-22T18:33:52.081788+00:00,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,1.0,low
+2026-10-22T18:33:52.081788+00:00,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.579224,True,tomtom,1.0,closed
+2026-10-22T18:33:52.081788+00:00,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,1.0,low
+2026-10-22T18:33:52.081788+00:00,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,1.0,low
+2026-10-22T18:33:52.081788+00:00,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,1.0,low
+2026-10-22T18:33:52.081788+00:00,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,1.0,low
+2026-10-22T18:33:52.081788+00:00,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,1.0,low

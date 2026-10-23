@@ -1,25 +1,673 @@
 timestamp,road_id,road_name,latitude,longitude,frc,current_speed,free_flow_speed,current_travel_time,free_flow_travel_time,confidence,road_closure,data_source,kafka_received_at,congestion_ratio,congestion_level,cluster_id,cluster_label
-2026-10-22 08:37:49.075182,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC1,21.6,46.0,255,119,0.82,False,synthetic_demo,2026-10-22 08:37:49.080,0.4696,moderate,2,Heavy Congestion
-2026-10-22 08:37:49.075182,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC1,16.2,49.5,366,120,0.77,False,synthetic_demo,2026-10-22 08:37:49.110,0.3273,high,2,Heavy Congestion
-2026-10-22 08:37:49.075182,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC1,25.0,42.3,203,120,0.78,False,synthetic_demo,2026-10-22 08:37:49.114,0.591,moderate,2,Heavy Congestion
-2026-10-22 08:37:49.075182,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC1,18.3,59.1,387,120,0.92,False,synthetic_demo,2026-10-22 08:37:49.120,0.3096,high,2,Heavy Congestion
-2026-10-22 08:37:49.075182,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC1,35.5,54.7,184,119,0.87,False,synthetic_demo,2026-10-22 08:37:49.124,0.649,moderate,0,Moderate Congestion
-2026-10-22 08:37:49.075182,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,15.1,48.9,388,120,0.93,False,synthetic_demo,2026-10-22 08:37:49.129,0.3088,high,2,Heavy Congestion
-2026-10-22 08:37:49.075182,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC1,20.8,45.6,263,120,0.77,False,synthetic_demo,2026-10-22 08:37:49.132,0.4561,moderate,2,Heavy Congestion
-2026-10-22 08:37:49.075182,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC1,28.9,67.4,280,120,0.96,False,synthetic_demo,2026-10-22 08:37:49.137,0.4288,moderate,2,Heavy Congestion
-2026-10-22 11:43:07.709488,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC1,27.4,44.8,195,119,0.95,False,synthetic_demo,2026-10-22 11:43:07.713,0.6116,moderate,2,Heavy Congestion
-2026-10-22 11:43:07.709488,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC1,34.8,50.3,173,120,1.0,False,synthetic_demo,2026-10-22 11:43:07.786,0.6918,moderate,0,Moderate Congestion
-2026-10-22 11:43:07.709488,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC1,27.6,38.6,168,120,0.96,False,synthetic_demo,2026-10-22 11:43:07.794,0.715,low,1,Light Congestion
-2026-10-22 11:43:07.709488,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC1,47.8,59.5,149,119,0.84,False,synthetic_demo,2026-10-22 11:43:07.800,0.8034,low,0,Moderate Congestion
-2026-10-22 11:43:07.709488,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC1,39.3,56.4,172,120,0.89,False,synthetic_demo,2026-10-22 11:43:07.805,0.6968,moderate,0,Moderate Congestion
-2026-10-22 11:43:07.709488,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,39.6,48.2,146,120,0.88,False,synthetic_demo,2026-10-22 11:43:07.811,0.8216,low,0,Moderate Congestion
-2026-10-22 11:43:07.709488,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC1,34.9,45.9,157,120,0.97,False,synthetic_demo,2026-10-22 11:43:07.816,0.7603,low,0,Moderate Congestion
-2026-10-22 11:43:07.709488,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC1,52.6,64.8,147,120,0.9,False,synthetic_demo,2026-10-22 11:43:07.820,0.8117,low,0,Moderate Congestion
-2026-10-22 11:49:34.973709,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,12.0,13.0,946,874,0.753852,True,tomtom,2026-10-22 11:49:42.324,0.9231,closed,1,Light Congestion
-2026-10-22 11:49:34.973709,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,36.0,40.0,1692,1523,1.0,False,tomtom,2026-10-22 11:49:42.338,0.9,low,0,Moderate Congestion
-2026-10-22 11:49:34.973709,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,9.0,13.0,621,430,0.913683,True,tomtom,2026-10-22 11:49:42.343,0.6923,closed,1,Light Congestion
-2026-10-22 11:49:34.973709,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,24.0,29.0,2294,1899,0.921568,False,tomtom,2026-10-22 11:49:42.347,0.8276,low,1,Light Congestion
-2026-10-22 11:49:34.973709,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 11:49:42.352,1.0,low,1,Light Congestion
-2026-10-22 11:49:34.973709,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,26.0,35.0,865,642,1.0,False,tomtom,2026-10-22 11:49:42.358,0.7429,low,1,Light Congestion
-2026-10-22 11:49:34.973709,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,29.0,36.0,2468,1988,0.957268,False,tomtom,2026-10-22 11:49:42.370,0.8056,low,1,Light Congestion
-2026-10-22 11:49:34.973709,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 11:49:42.375,1.0,low,1,Light Congestion
+2026-10-22 08:37:49.075182,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC1,21.6,46.0,255,119,0.82,False,synthetic_demo,2026-10-22 08:37:49.080,0.4696,moderate,0,Heavy Congestion
+2026-10-22 08:37:49.075182,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC1,16.2,49.5,366,120,0.77,False,synthetic_demo,2026-10-22 08:37:49.110,0.3273,high,0,Heavy Congestion
+2026-10-22 08:37:49.075182,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC1,25.0,42.3,203,120,0.78,False,synthetic_demo,2026-10-22 08:37:49.114,0.591,moderate,0,Heavy Congestion
+2026-10-22 08:37:49.075182,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC1,18.3,59.1,387,120,0.92,False,synthetic_demo,2026-10-22 08:37:49.120,0.3096,high,0,Heavy Congestion
+2026-10-22 08:37:49.075182,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC1,35.5,54.7,184,119,0.87,False,synthetic_demo,2026-10-22 08:37:49.124,0.649,moderate,0,Heavy Congestion
+2026-10-22 08:37:49.075182,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,15.1,48.9,388,120,0.93,False,synthetic_demo,2026-10-22 08:37:49.129,0.3088,high,0,Heavy Congestion
+2026-10-22 08:37:49.075182,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC1,20.8,45.6,263,120,0.77,False,synthetic_demo,2026-10-22 08:37:49.132,0.4561,moderate,0,Heavy Congestion
+2026-10-22 08:37:49.075182,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC1,28.9,67.4,280,120,0.96,False,synthetic_demo,2026-10-22 08:37:49.137,0.4288,moderate,0,Heavy Congestion
+2026-10-22 11:43:07.709488,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC1,27.4,44.8,195,119,0.95,False,synthetic_demo,2026-10-22 11:43:07.713,0.6116,moderate,0,Heavy Congestion
+2026-10-22 11:43:07.709488,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC1,34.8,50.3,173,120,1.0,False,synthetic_demo,2026-10-22 11:43:07.786,0.6918,moderate,0,Heavy Congestion
+2026-10-22 11:43:07.709488,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC1,27.6,38.6,168,120,0.96,False,synthetic_demo,2026-10-22 11:43:07.794,0.715,low,0,Heavy Congestion
+2026-10-22 11:43:07.709488,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC1,47.8,59.5,149,119,0.84,False,synthetic_demo,2026-10-22 11:43:07.800,0.8034,low,2,Light Congestion
+2026-10-22 11:43:07.709488,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC1,39.3,56.4,172,120,0.89,False,synthetic_demo,2026-10-22 11:43:07.805,0.6968,moderate,0,Heavy Congestion
+2026-10-22 11:43:07.709488,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,39.6,48.2,146,120,0.88,False,synthetic_demo,2026-10-22 11:43:07.811,0.8216,low,2,Light Congestion
+2026-10-22 11:43:07.709488,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC1,34.9,45.9,157,120,0.97,False,synthetic_demo,2026-10-22 11:43:07.816,0.7603,low,0,Heavy Congestion
+2026-10-22 11:43:07.709488,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC1,52.6,64.8,147,120,0.9,False,synthetic_demo,2026-10-22 11:43:07.820,0.8117,low,2,Light Congestion
+2026-10-22 11:49:34.973709,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,12.0,13.0,946,874,0.753852,True,tomtom,2026-10-22 11:49:42.324,0.9231,closed,1,Moderate Congestion
+2026-10-22 11:49:34.973709,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,36.0,40.0,1692,1523,1.0,False,tomtom,2026-10-22 11:49:42.338,0.9,low,2,Light Congestion
+2026-10-22 11:49:34.973709,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,9.0,13.0,621,430,0.913683,True,tomtom,2026-10-22 11:49:42.343,0.6923,closed,0,Heavy Congestion
+2026-10-22 11:49:34.973709,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,24.0,29.0,2294,1899,0.921568,False,tomtom,2026-10-22 11:49:42.347,0.8276,low,0,Heavy Congestion
+2026-10-22 11:49:34.973709,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 11:49:42.352,1.0,low,1,Moderate Congestion
+2026-10-22 11:49:34.973709,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,26.0,35.0,865,642,1.0,False,tomtom,2026-10-22 11:49:42.358,0.7429,low,0,Heavy Congestion
+2026-10-22 11:49:34.973709,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,29.0,36.0,2468,1988,0.957268,False,tomtom,2026-10-22 11:49:42.370,0.8056,low,0,Heavy Congestion
+2026-10-22 11:49:34.973709,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 11:49:42.375,1.0,low,1,Moderate Congestion
+2026-10-22 22:27:59.703696,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.629971,True,tomtom,2026-10-22 22:28:05.468,1.0,closed,1,Moderate Congestion
+2026-10-22 22:27:59.703696,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:28:05.531,1.0,low,2,Light Congestion
+2026-10-22 22:27:59.703696,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.866666,True,tomtom,2026-10-22 22:28:05.537,0.9231,closed,1,Moderate Congestion
+2026-10-22 22:27:59.703696,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:28:05.540,1.0,low,2,Light Congestion
+2026-10-22 22:27:59.703696,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:28:05.544,1.0,low,1,Moderate Congestion
+2026-10-22 22:27:59.703696,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:28:05.548,1.0,low,2,Light Congestion
+2026-10-22 22:27:59.703696,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:28:05.552,1.0,low,2,Light Congestion
+2026-10-22 22:27:59.703696,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:28:05.555,1.0,low,1,Moderate Congestion
+2026-10-22 22:29:05.565011,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.638207,True,tomtom,2026-10-22 22:29:11.427,1.0,closed,1,Moderate Congestion
+2026-10-22 22:29:05.565011,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:29:11.437,1.0,low,2,Light Congestion
+2026-10-22 22:29:05.565011,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.853609,True,tomtom,2026-10-22 22:29:11.442,0.9231,closed,1,Moderate Congestion
+2026-10-22 22:29:05.565011,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:29:11.449,1.0,low,2,Light Congestion
+2026-10-22 22:29:05.565011,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:29:11.455,1.0,low,1,Moderate Congestion
+2026-10-22 22:29:05.565011,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,28.0,35.0,803,642,1.0,False,tomtom,2026-10-22 22:29:11.461,0.8,low,0,Heavy Congestion
+2026-10-22 22:29:05.565011,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:29:11.466,1.0,low,2,Light Congestion
+2026-10-22 22:29:05.565011,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:29:11.472,1.0,low,1,Moderate Congestion
+2026-10-22 22:30:11.507099,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.636775,True,tomtom,2026-10-22 22:30:17.129,1.0,closed,1,Moderate Congestion
+2026-10-22 22:30:11.507099,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:30:17.135,1.0,low,2,Light Congestion
+2026-10-22 22:30:11.507099,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.859617,True,tomtom,2026-10-22 22:30:17.144,0.9231,closed,1,Moderate Congestion
+2026-10-22 22:30:11.507099,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:30:17.151,1.0,low,2,Light Congestion
+2026-10-22 22:30:11.507099,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:30:17.160,1.0,low,1,Moderate Congestion
+2026-10-22 22:30:11.507099,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,28.0,35.0,803,642,1.0,False,tomtom,2026-10-22 22:30:17.166,0.8,low,0,Heavy Congestion
+2026-10-22 22:30:11.507099,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:30:17.174,1.0,low,2,Light Congestion
+2026-10-22 22:30:11.507099,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:30:17.182,1.0,low,1,Moderate Congestion
+2026-10-22 22:31:17.191042,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,13.0,874,874,0.64501,True,tomtom,2026-10-22 22:31:22.893,1.0,closed,1,Moderate Congestion
+2026-10-22 22:31:17.191042,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:31:22.903,1.0,low,2,Light Congestion
+2026-10-22 22:31:17.191042,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.86262,True,tomtom,2026-10-22 22:31:22.908,0.9231,closed,1,Moderate Congestion
+2026-10-22 22:31:17.191042,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:31:22.915,1.0,low,2,Light Congestion
+2026-10-22 22:31:17.191042,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:31:22.923,1.0,low,1,Moderate Congestion
+2026-10-22 22:31:17.191042,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,28.0,36.0,803,624,1.0,False,tomtom,2026-10-22 22:31:22.930,0.7778,low,0,Heavy Congestion
+2026-10-22 22:31:17.191042,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:31:22.936,1.0,low,2,Light Congestion
+2026-10-22 22:31:17.191042,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:31:22.942,1.0,low,1,Moderate Congestion
+2026-10-22 22:32:22.946847,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.653246,True,tomtom,2026-10-22 22:32:28.160,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:32:22.946847,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:32:28.169,1.0,low,2,Light Congestion
+2026-10-22 22:32:22.946847,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.852567,True,tomtom,2026-10-22 22:32:28.175,0.9231,closed,1,Moderate Congestion
+2026-10-22 22:32:22.946847,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:32:28.184,1.0,low,2,Light Congestion
+2026-10-22 22:32:22.946847,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:32:28.191,1.0,low,1,Moderate Congestion
+2026-10-22 22:32:22.946847,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:32:28.198,1.0,low,2,Light Congestion
+2026-10-22 22:32:22.946847,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:32:28.203,1.0,low,2,Light Congestion
+2026-10-22 22:32:22.946847,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:32:28.209,1.0,low,1,Moderate Congestion
+2026-10-22 22:33:28.215465,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.653246,True,tomtom,2026-10-22 22:33:34.068,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:33:28.215465,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:33:34.076,1.0,low,2,Light Congestion
+2026-10-22 22:33:28.215465,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.852567,True,tomtom,2026-10-22 22:33:34.084,0.9231,closed,1,Moderate Congestion
+2026-10-22 22:33:28.215465,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:33:34.091,1.0,low,2,Light Congestion
+2026-10-22 22:33:28.215465,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:33:34.097,1.0,low,1,Moderate Congestion
+2026-10-22 22:33:28.215465,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:33:34.103,1.0,low,2,Light Congestion
+2026-10-22 22:33:28.215465,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:33:34.111,1.0,low,2,Light Congestion
+2026-10-22 22:33:28.215465,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:33:34.116,1.0,low,1,Moderate Congestion
+2026-10-22 22:34:34.129486,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.653246,True,tomtom,2026-10-22 22:34:40.012,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:34:34.129486,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:34:40.021,1.0,low,2,Light Congestion
+2026-10-22 22:34:34.129486,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.852567,True,tomtom,2026-10-22 22:34:40.029,0.9231,closed,1,Moderate Congestion
+2026-10-22 22:34:34.129486,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:34:40.034,1.0,low,2,Light Congestion
+2026-10-22 22:34:34.129486,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:34:40.038,1.0,low,1,Moderate Congestion
+2026-10-22 22:34:34.129486,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:34:40.043,1.0,low,2,Light Congestion
+2026-10-22 22:34:34.129486,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:34:40.049,1.0,low,2,Light Congestion
+2026-10-22 22:34:34.129486,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:34:40.054,1.0,low,1,Moderate Congestion
+2026-10-22 22:35:40.061019,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.653246,True,tomtom,2026-10-22 22:35:45.317,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:35:40.061019,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:35:45.324,1.0,low,2,Light Congestion
+2026-10-22 22:35:40.061019,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.852567,True,tomtom,2026-10-22 22:35:45.329,0.9231,closed,1,Moderate Congestion
+2026-10-22 22:35:40.061019,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:35:45.340,1.0,low,2,Light Congestion
+2026-10-22 22:35:40.061019,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:35:45.345,1.0,low,1,Moderate Congestion
+2026-10-22 22:35:40.061019,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:35:45.353,1.0,low,2,Light Congestion
+2026-10-22 22:35:40.061019,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:35:45.359,1.0,low,2,Light Congestion
+2026-10-22 22:35:40.061019,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:35:45.365,1.0,low,1,Moderate Congestion
+2026-10-22 22:36:45.388417,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.64501,True,tomtom,2026-10-22 22:36:50.780,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:36:45.388417,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:36:50.789,1.0,low,2,Light Congestion
+2026-10-22 22:36:45.388417,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.855538,True,tomtom,2026-10-22 22:36:50.797,0.9231,closed,1,Moderate Congestion
+2026-10-22 22:36:45.388417,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:36:50.803,1.0,low,2,Light Congestion
+2026-10-22 22:36:45.388417,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:36:50.809,1.0,low,1,Moderate Congestion
+2026-10-22 22:36:45.388417,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:36:50.815,1.0,low,2,Light Congestion
+2026-10-22 22:36:45.388417,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:36:50.819,1.0,low,2,Light Congestion
+2026-10-22 22:36:45.388417,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:36:50.825,1.0,low,1,Moderate Congestion
+2026-10-22 22:37:50.831302,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.653246,True,tomtom,2026-10-22 22:37:55.992,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:37:50.831302,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:37:56.003,1.0,low,2,Light Congestion
+2026-10-22 22:37:50.831302,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.847543,True,tomtom,2026-10-22 22:37:56.009,0.9231,closed,1,Moderate Congestion
+2026-10-22 22:37:50.831302,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:37:56.016,1.0,low,2,Light Congestion
+2026-10-22 22:37:50.831302,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:37:56.021,1.0,low,1,Moderate Congestion
+2026-10-22 22:37:50.831302,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:37:56.026,1.0,low,2,Light Congestion
+2026-10-22 22:37:50.831302,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:37:56.032,1.0,low,2,Light Congestion
+2026-10-22 22:37:50.831302,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:37:56.038,1.0,low,1,Moderate Congestion
+2026-10-22 22:38:56.044223,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.657542,True,tomtom,2026-10-22 22:39:01.425,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:38:56.044223,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:39:01.432,1.0,low,2,Light Congestion
+2026-10-22 22:38:56.044223,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.85347,True,tomtom,2026-10-22 22:39:01.437,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:38:56.044223,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:39:01.443,1.0,low,2,Light Congestion
+2026-10-22 22:38:56.044223,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:39:01.447,1.0,low,1,Moderate Congestion
+2026-10-22 22:38:56.044223,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:39:01.453,1.0,low,2,Light Congestion
+2026-10-22 22:38:56.044223,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:39:01.459,1.0,low,2,Light Congestion
+2026-10-22 22:38:56.044223,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:39:01.464,1.0,low,1,Moderate Congestion
+2026-10-22 22:40:01.469890,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.657542,True,tomtom,2026-10-22 22:40:06.686,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:40:01.469890,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:40:06.694,1.0,low,2,Light Congestion
+2026-10-22 22:40:01.469890,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.85347,True,tomtom,2026-10-22 22:40:06.700,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:40:01.469890,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:40:06.705,1.0,low,2,Light Congestion
+2026-10-22 22:40:01.469890,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:40:06.710,1.0,low,1,Moderate Congestion
+2026-10-22 22:40:01.469890,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:40:06.716,1.0,low,2,Light Congestion
+2026-10-22 22:40:01.469890,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:40:06.721,1.0,low,2,Light Congestion
+2026-10-22 22:40:01.469890,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:40:06.728,1.0,low,1,Moderate Congestion
+2026-10-22 22:41:06.734468,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.65611,True,tomtom,2026-10-22 22:41:12.040,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:41:06.734468,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:41:12.049,1.0,low,2,Light Congestion
+2026-10-22 22:41:06.734468,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.847543,True,tomtom,2026-10-22 22:41:12.055,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:41:06.734468,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:41:12.060,1.0,low,2,Light Congestion
+2026-10-22 22:41:06.734468,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:41:12.065,1.0,low,1,Moderate Congestion
+2026-10-22 22:41:06.734468,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:41:12.069,1.0,low,2,Light Congestion
+2026-10-22 22:41:06.734468,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:41:12.077,1.0,low,2,Light Congestion
+2026-10-22 22:41:06.734468,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:41:12.083,1.0,low,1,Moderate Congestion
+2026-10-22 22:42:12.091573,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.65611,True,tomtom,2026-10-22 22:42:17.635,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:42:12.091573,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:42:17.641,1.0,low,2,Light Congestion
+2026-10-22 22:42:12.091573,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.847543,True,tomtom,2026-10-22 22:42:17.647,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:42:12.091573,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:42:17.652,1.0,low,2,Light Congestion
+2026-10-22 22:42:12.091573,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:42:17.659,1.0,low,1,Moderate Congestion
+2026-10-22 22:42:12.091573,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:42:17.665,1.0,low,2,Light Congestion
+2026-10-22 22:42:12.091573,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:42:17.671,1.0,low,2,Light Congestion
+2026-10-22 22:42:12.091573,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:42:17.677,1.0,low,1,Moderate Congestion
+2026-10-22 22:43:17.683217,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.646442,True,tomtom,2026-10-22 22:43:23.543,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:43:17.683217,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:43:23.550,1.0,low,2,Light Congestion
+2026-10-22 22:43:17.683217,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.841182,True,tomtom,2026-10-22 22:43:23.555,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:43:17.683217,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:43:23.559,1.0,low,2,Light Congestion
+2026-10-22 22:43:17.683217,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:43:23.564,1.0,low,1,Moderate Congestion
+2026-10-22 22:43:17.683217,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:43:23.569,1.0,low,2,Light Congestion
+2026-10-22 22:43:17.683217,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:43:23.574,1.0,low,2,Light Congestion
+2026-10-22 22:43:17.683217,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:43:23.581,1.0,low,1,Moderate Congestion
+2026-10-22 22:44:23.586814,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.636775,True,tomtom,2026-10-22 22:44:28.966,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:44:23.586814,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:44:28.973,1.0,low,2,Light Congestion
+2026-10-22 22:44:23.586814,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.834821,True,tomtom,2026-10-22 22:44:28.978,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:44:23.586814,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:44:28.983,1.0,low,2,Light Congestion
+2026-10-22 22:44:23.586814,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:44:28.989,1.0,low,1,Moderate Congestion
+2026-10-22 22:44:23.586814,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:44:28.992,1.0,low,2,Light Congestion
+2026-10-22 22:44:23.586814,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:44:29.002,1.0,low,2,Light Congestion
+2026-10-22 22:44:23.586814,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:44:29.006,1.0,low,1,Moderate Congestion
+2026-10-22 22:45:29.011740,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.636775,True,tomtom,2026-10-22 22:45:34.621,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:45:29.011740,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:45:34.627,1.0,low,2,Light Congestion
+2026-10-22 22:45:29.011740,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.834821,True,tomtom,2026-10-22 22:45:34.632,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:45:29.011740,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:45:34.637,1.0,low,2,Light Congestion
+2026-10-22 22:45:29.011740,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:45:34.643,1.0,low,1,Moderate Congestion
+2026-10-22 22:45:29.011740,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:45:34.647,1.0,low,2,Light Congestion
+2026-10-22 22:45:29.011740,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:45:34.652,1.0,low,2,Light Congestion
+2026-10-22 22:45:29.011740,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:45:34.658,1.0,low,1,Moderate Congestion
+2026-10-22 22:46:34.664648,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.636775,True,tomtom,2026-10-22 22:46:40.136,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:46:34.664648,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:46:40.144,1.0,low,2,Light Congestion
+2026-10-22 22:46:34.664648,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.803016,True,tomtom,2026-10-22 22:46:40.149,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:46:34.664648,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:46:40.158,1.0,low,2,Light Congestion
+2026-10-22 22:46:34.664648,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:46:40.163,1.0,low,1,Moderate Congestion
+2026-10-22 22:46:34.664648,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:46:40.168,1.0,low,2,Light Congestion
+2026-10-22 22:46:34.664648,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:46:40.173,1.0,low,2,Light Congestion
+2026-10-22 22:46:34.664648,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:46:40.184,1.0,low,1,Moderate Congestion
+2026-10-22 22:47:40.197150,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.62854,True,tomtom,2026-10-22 22:47:45.817,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:47:40.197150,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:47:45.823,1.0,low,2,Light Congestion
+2026-10-22 22:47:40.197150,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.771211,True,tomtom,2026-10-22 22:47:45.828,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:47:40.197150,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:47:45.835,1.0,low,2,Light Congestion
+2026-10-22 22:47:40.197150,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:47:45.840,1.0,low,1,Moderate Congestion
+2026-10-22 22:47:40.197150,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:47:45.846,1.0,low,2,Light Congestion
+2026-10-22 22:47:40.197150,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:47:45.852,1.0,low,2,Light Congestion
+2026-10-22 22:47:40.197150,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:47:45.858,1.0,low,1,Moderate Congestion
+2026-10-22 22:48:45.863429,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.62854,True,tomtom,2026-10-22 22:48:51.298,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:48:45.863429,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:48:51.307,1.0,low,2,Light Congestion
+2026-10-22 22:48:45.863429,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.76232,True,tomtom,2026-10-22 22:48:51.312,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:48:45.863429,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:48:51.317,1.0,low,2,Light Congestion
+2026-10-22 22:48:45.863429,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:48:51.322,1.0,low,1,Moderate Congestion
+2026-10-22 22:48:45.863429,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:48:51.328,1.0,low,2,Light Congestion
+2026-10-22 22:48:45.863429,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:48:51.332,1.0,low,2,Light Congestion
+2026-10-22 22:48:45.863429,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:48:51.338,1.0,low,1,Moderate Congestion
+2026-10-22 22:49:51.345193,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.635699,True,tomtom,2026-10-22 22:49:56.803,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:49:51.345193,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:49:56.809,1.0,low,2,Light Congestion
+2026-10-22 22:49:51.345193,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,9.0,13.0,621,430,0.736876,True,tomtom,2026-10-22 22:49:56.816,0.6923,closed,0,Heavy Congestion
+2026-10-22 22:49:51.345193,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:49:56.822,1.0,low,2,Light Congestion
+2026-10-22 22:49:51.345193,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:49:56.829,1.0,low,1,Moderate Congestion
+2026-10-22 22:49:51.345193,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:49:56.834,1.0,low,2,Light Congestion
+2026-10-22 22:49:51.345193,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:49:56.838,1.0,low,2,Light Congestion
+2026-10-22 22:49:51.345193,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:49:56.843,1.0,low,1,Moderate Congestion
+2026-10-22 22:50:56.850378,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.627464,True,tomtom,2026-10-22 22:51:02.467,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:50:56.850378,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:51:02.474,1.0,low,2,Light Congestion
+2026-10-22 22:50:56.850378,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.733913,True,tomtom,2026-10-22 22:51:02.482,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:50:56.850378,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:51:02.489,1.0,low,2,Light Congestion
+2026-10-22 22:50:56.850378,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:51:02.496,1.0,low,1,Moderate Congestion
+2026-10-22 22:50:56.850378,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:51:02.501,1.0,low,2,Light Congestion
+2026-10-22 22:50:56.850378,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:51:02.508,1.0,low,2,Light Congestion
+2026-10-22 22:50:56.850378,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:51:02.515,1.0,low,1,Moderate Congestion
+2026-10-22 22:52:02.522279,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.610993,True,tomtom,2026-10-22 22:52:07.918,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:52:02.522279,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:52:07.923,1.0,low,2,Light Congestion
+2026-10-22 22:52:02.522279,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.727552,True,tomtom,2026-10-22 22:52:07.929,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:52:02.522279,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:52:07.934,1.0,low,2,Light Congestion
+2026-10-22 22:52:02.522279,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:52:07.940,1.0,low,1,Moderate Congestion
+2026-10-22 22:52:02.522279,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:52:07.944,1.0,low,2,Light Congestion
+2026-10-22 22:52:02.522279,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:52:07.949,1.0,low,2,Light Congestion
+2026-10-22 22:52:02.522279,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:52:07.953,1.0,low,1,Moderate Congestion
+2026-10-22 22:53:07.959578,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.602758,True,tomtom,2026-10-22 22:53:13.230,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:53:07.959578,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:53:13.236,1.0,low,2,Light Congestion
+2026-10-22 22:53:07.959578,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.703842,True,tomtom,2026-10-22 22:53:13.241,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:53:07.959578,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:53:13.247,1.0,low,2,Light Congestion
+2026-10-22 22:53:07.959578,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:53:13.251,1.0,low,1,Moderate Congestion
+2026-10-22 22:53:07.959578,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:53:13.256,1.0,low,2,Light Congestion
+2026-10-22 22:53:07.959578,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:53:13.263,1.0,low,2,Light Congestion
+2026-10-22 22:53:07.959578,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:53:13.268,1.0,low,1,Moderate Congestion
+2026-10-22 22:54:13.273904,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.610993,True,tomtom,2026-10-22 22:54:19.052,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:54:13.273904,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:54:19.058,1.0,low,2,Light Congestion
+2026-10-22 22:54:13.273904,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.69112,True,tomtom,2026-10-22 22:54:19.063,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:54:13.273904,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:54:19.068,1.0,low,2,Light Congestion
+2026-10-22 22:54:13.273904,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:54:19.073,1.0,low,1,Moderate Congestion
+2026-10-22 22:54:13.273904,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:54:19.079,1.0,low,2,Light Congestion
+2026-10-22 22:54:13.273904,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:54:19.083,1.0,low,2,Light Congestion
+2026-10-22 22:54:13.273904,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:54:19.088,1.0,low,1,Moderate Congestion
+2026-10-22 22:55:19.141531,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.617796,True,tomtom,2026-10-22 22:55:24.840,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:55:19.141531,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:55:24.848,1.0,low,2,Light Congestion
+2026-10-22 22:55:19.141531,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.678398,True,tomtom,2026-10-22 22:55:24.856,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:55:19.141531,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:55:24.863,1.0,low,2,Light Congestion
+2026-10-22 22:55:19.141531,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:55:24.872,1.0,low,1,Moderate Congestion
+2026-10-22 22:55:19.141531,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:55:24.881,1.0,low,2,Light Congestion
+2026-10-22 22:55:19.141531,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:55:24.895,1.0,low,2,Light Congestion
+2026-10-22 22:55:19.141531,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:55:24.904,1.0,low,1,Moderate Congestion
+2026-10-22 22:56:24.923179,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.601326,True,tomtom,2026-10-22 22:56:31.274,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:56:24.923179,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:56:31.283,1.0,low,2,Light Congestion
+2026-10-22 22:56:24.923179,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.636473,True,tomtom,2026-10-22 22:56:31.291,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:56:24.923179,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:56:31.307,1.0,low,2,Light Congestion
+2026-10-22 22:56:24.923179,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:56:31.390,1.0,low,1,Moderate Congestion
+2026-10-22 22:56:24.923179,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:56:31.403,1.0,low,2,Light Congestion
+2026-10-22 22:56:24.923179,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:56:31.509,1.0,low,2,Light Congestion
+2026-10-22 22:56:24.923179,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:56:31.532,1.0,low,1,Moderate Congestion
+2026-10-22 22:57:31.546513,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.601326,True,tomtom,2026-10-22 22:57:37.508,0.9286,closed,1,Moderate Congestion
+2026-10-22 22:57:31.546513,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:57:37.540,1.0,low,2,Light Congestion
+2026-10-22 22:57:31.546513,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,10.0,13.0,559,430,0.608065,True,tomtom,2026-10-22 22:57:37.548,0.7692,closed,0,Heavy Congestion
+2026-10-22 22:57:31.546513,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:57:37.553,1.0,low,2,Light Congestion
+2026-10-22 22:57:31.546513,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:57:37.558,1.0,low,1,Moderate Congestion
+2026-10-22 22:57:31.546513,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:57:37.565,1.0,low,2,Light Congestion
+2026-10-22 22:57:31.546513,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:57:37.580,1.0,low,2,Light Congestion
+2026-10-22 22:57:31.546513,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:57:37.630,1.0,low,1,Moderate Congestion
+2026-10-22 22:58:37.676848,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,13.0,874,874,0.575187,True,tomtom,2026-10-22 22:58:43.554,1.0,closed,1,Moderate Congestion
+2026-10-22 22:58:37.676848,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:58:43.560,1.0,low,2,Light Congestion
+2026-10-22 22:58:37.676848,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,11.0,13.0,508,430,0.582621,True,tomtom,2026-10-22 22:58:43.567,0.8462,closed,1,Moderate Congestion
+2026-10-22 22:58:37.676848,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:58:43.575,1.0,low,2,Light Congestion
+2026-10-22 22:58:37.676848,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:58:43.583,1.0,low,1,Moderate Congestion
+2026-10-22 22:58:37.676848,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:58:43.588,1.0,low,2,Light Congestion
+2026-10-22 22:58:37.676848,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:58:43.596,1.0,low,2,Light Congestion
+2026-10-22 22:58:37.676848,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:58:43.601,1.0,low,1,Moderate Congestion
+2026-10-22 22:59:43.607999,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,13.0,874,874,0.566952,True,tomtom,2026-10-22 22:59:51.992,1.0,closed,1,Moderate Congestion
+2026-10-22 22:59:43.607999,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 22:59:52.003,1.0,low,2,Light Congestion
+2026-10-22 22:59:43.607999,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,11.0,13.0,508,430,0.582621,True,tomtom,2026-10-22 22:59:52.010,0.8462,closed,1,Moderate Congestion
+2026-10-22 22:59:43.607999,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 22:59:52.016,1.0,low,2,Light Congestion
+2026-10-22 22:59:43.607999,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 22:59:52.022,1.0,low,1,Moderate Congestion
+2026-10-22 22:59:43.607999,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 22:59:52.027,1.0,low,2,Light Congestion
+2026-10-22 22:59:43.607999,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 22:59:52.034,1.0,low,2,Light Congestion
+2026-10-22 22:59:43.607999,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 22:59:52.041,1.0,low,1,Moderate Congestion
+2026-10-22 23:00:52.050135,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,13.0,874,874,0.564088,True,tomtom,2026-10-22 23:00:57.606,1.0,closed,1,Moderate Congestion
+2026-10-22 23:00:52.050135,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:00:57.615,1.0,low,2,Light Congestion
+2026-10-22 23:00:52.050135,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,11.0,13.0,508,430,0.601704,True,tomtom,2026-10-22 23:00:57.624,0.8462,closed,1,Moderate Congestion
+2026-10-22 23:00:52.050135,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:00:57.629,1.0,low,2,Light Congestion
+2026-10-22 23:00:52.050135,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:00:57.634,1.0,low,1,Moderate Congestion
+2026-10-22 23:00:52.050135,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:00:57.639,1.0,low,2,Light Congestion
+2026-10-22 23:00:52.050135,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:00:57.646,1.0,low,2,Light Congestion
+2026-10-22 23:00:52.050135,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:00:57.652,1.0,low,1,Moderate Congestion
+2026-10-22 23:10:12.783454,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC1,37.8,43.7,139,120,0.86,False,synthetic_demo,2026-10-22 23:10:12.785,0.865,low,2,Light Congestion
+2026-10-22 23:10:12.783454,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC1,42.8,48.6,136,120,0.96,False,synthetic_demo,2026-10-22 23:10:13.198,0.8807,low,2,Light Congestion
+2026-10-22 23:10:12.783454,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC1,37.8,42.7,135,119,0.94,False,synthetic_demo,2026-10-22 23:10:13.221,0.8852,low,2,Light Congestion
+2026-10-22 23:10:12.783454,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC1,59.1,61.1,124,120,0.91,False,synthetic_demo,2026-10-22 23:10:13.246,0.9673,low,2,Light Congestion
+2026-10-22 23:10:12.783454,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC1,51.7,55.4,128,120,0.96,False,synthetic_demo,2026-10-22 23:10:13.268,0.9332,low,2,Light Congestion
+2026-10-22 23:10:12.783454,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,47.7,49.1,123,120,0.98,False,synthetic_demo,2026-10-22 23:10:13.281,0.9715,low,2,Light Congestion
+2026-10-22 23:10:12.783454,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC1,45.0,47.4,126,120,0.97,False,synthetic_demo,2026-10-22 23:10:13.303,0.9494,low,2,Light Congestion
+2026-10-22 23:10:12.783454,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC1,59.2,63.5,128,120,0.97,False,synthetic_demo,2026-10-22 23:10:13.317,0.9323,low,2,Light Congestion
+2026-10-22 23:11:13.341992,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,2026-10-22 23:11:19.708,1.0,closed,1,Moderate Congestion
+2026-10-22 23:11:13.341992,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:11:19.791,1.0,low,2,Light Congestion
+2026-10-22 23:11:13.341992,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.604234,True,tomtom,2026-10-22 23:11:19.833,1.0,closed,1,Moderate Congestion
+2026-10-22 23:11:13.341992,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:11:19.949,1.0,low,2,Light Congestion
+2026-10-22 23:11:13.341992,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:11:19.971,1.0,low,1,Moderate Congestion
+2026-10-22 23:11:13.341992,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:11:19.983,1.0,low,2,Light Congestion
+2026-10-22 23:11:13.341992,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:11:19.994,1.0,low,2,Light Congestion
+2026-10-22 23:11:13.341992,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:11:20.021,1.0,low,1,Moderate Congestion
+2026-10-22 23:12:20.038406,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,2026-10-22 23:12:25.776,1.0,closed,1,Moderate Congestion
+2026-10-22 23:12:20.038406,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:12:25.785,1.0,low,2,Light Congestion
+2026-10-22 23:12:20.038406,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.598307,True,tomtom,2026-10-22 23:12:25.793,1.0,closed,1,Moderate Congestion
+2026-10-22 23:12:20.038406,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:12:25.800,1.0,low,2,Light Congestion
+2026-10-22 23:12:20.038406,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:12:25.805,1.0,low,1,Moderate Congestion
+2026-10-22 23:12:20.038406,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:12:25.810,1.0,low,2,Light Congestion
+2026-10-22 23:12:20.038406,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:12:25.815,1.0,low,2,Light Congestion
+2026-10-22 23:12:20.038406,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:12:25.820,1.0,low,1,Moderate Congestion
+2026-10-22 23:13:25.825816,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,2026-10-22 23:13:31.917,1.0,closed,1,Moderate Congestion
+2026-10-22 23:13:25.825816,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:13:31.923,1.0,low,2,Light Congestion
+2026-10-22 23:13:25.825816,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.604234,True,tomtom,2026-10-22 23:13:31.928,1.0,closed,1,Moderate Congestion
+2026-10-22 23:13:25.825816,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:13:31.934,1.0,low,2,Light Congestion
+2026-10-22 23:13:25.825816,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:13:31.938,1.0,low,1,Moderate Congestion
+2026-10-22 23:13:25.825816,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:13:31.944,1.0,low,2,Light Congestion
+2026-10-22 23:13:25.825816,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:13:31.948,1.0,low,2,Light Congestion
+2026-10-22 23:13:25.825816,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:13:31.953,1.0,low,1,Moderate Congestion
+2026-10-22 23:14:31.971679,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,2026-10-22 23:14:37.585,1.0,closed,1,Moderate Congestion
+2026-10-22 23:14:31.971679,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:14:37.591,1.0,low,2,Light Congestion
+2026-10-22 23:14:31.971679,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.604234,True,tomtom,2026-10-22 23:14:37.598,1.0,closed,1,Moderate Congestion
+2026-10-22 23:14:31.971679,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:14:37.606,1.0,low,2,Light Congestion
+2026-10-22 23:14:31.971679,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:14:37.611,1.0,low,1,Moderate Congestion
+2026-10-22 23:14:31.971679,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:14:37.616,1.0,low,2,Light Congestion
+2026-10-22 23:14:31.971679,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:14:37.621,1.0,low,2,Light Congestion
+2026-10-22 23:14:31.971679,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:14:37.624,1.0,low,1,Moderate Congestion
+2026-10-22 23:15:37.631167,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,2026-10-22 23:15:43.897,1.0,closed,1,Moderate Congestion
+2026-10-22 23:15:37.631167,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:15:43.904,1.0,low,2,Light Congestion
+2026-10-22 23:15:37.631167,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.645726,True,tomtom,2026-10-22 23:15:43.909,1.0,closed,1,Moderate Congestion
+2026-10-22 23:15:37.631167,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:15:43.914,1.0,low,2,Light Congestion
+2026-10-22 23:15:37.631167,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:15:43.919,1.0,low,1,Moderate Congestion
+2026-10-22 23:15:37.631167,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:15:43.925,1.0,low,2,Light Congestion
+2026-10-22 23:15:37.631167,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:15:43.930,1.0,low,2,Light Congestion
+2026-10-22 23:15:37.631167,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:15:43.934,1.0,low,1,Moderate Congestion
+2026-10-22 23:16:43.939727,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.542246,True,tomtom,2026-10-22 23:16:49.938,1.0,closed,1,Moderate Congestion
+2026-10-22 23:16:43.939727,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:16:49.947,1.0,low,2,Light Congestion
+2026-10-22 23:16:43.939727,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.693217,True,tomtom,2026-10-22 23:16:49.952,1.0,closed,1,Moderate Congestion
+2026-10-22 23:16:43.939727,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:16:49.958,1.0,low,2,Light Congestion
+2026-10-22 23:16:43.939727,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:16:49.964,1.0,low,1,Moderate Congestion
+2026-10-22 23:16:43.939727,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:16:49.970,1.0,low,2,Light Congestion
+2026-10-22 23:16:43.939727,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:16:49.974,1.0,low,2,Light Congestion
+2026-10-22 23:16:43.939727,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:16:49.979,1.0,low,1,Moderate Congestion
+2026-10-22 23:17:49.984047,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.529715,True,tomtom,2026-10-22 23:17:55.559,1.0,closed,1,Moderate Congestion
+2026-10-22 23:17:49.984047,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:17:55.564,1.0,low,2,Light Congestion
+2026-10-22 23:17:49.984047,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.705939,True,tomtom,2026-10-22 23:17:55.570,1.0,closed,1,Moderate Congestion
+2026-10-22 23:17:49.984047,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:17:55.575,1.0,low,2,Light Congestion
+2026-10-22 23:17:49.984047,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:17:55.581,1.0,low,1,Moderate Congestion
+2026-10-22 23:17:49.984047,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:17:55.585,1.0,low,2,Light Congestion
+2026-10-22 23:17:49.984047,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:17:55.590,1.0,low,2,Light Congestion
+2026-10-22 23:17:49.984047,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:17:55.594,1.0,low,1,Moderate Congestion
+2026-10-22 23:18:55.600445,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,2026-10-22 23:19:00.644,1.0,closed,1,Moderate Congestion
+2026-10-22 23:18:55.600445,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:19:00.650,1.0,low,2,Light Congestion
+2026-10-22 23:18:55.600445,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,2026-10-22 23:19:00.657,1.0,closed,1,Moderate Congestion
+2026-10-22 23:18:55.600445,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:19:00.662,1.0,low,2,Light Congestion
+2026-10-22 23:18:55.600445,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:19:00.668,1.0,low,1,Moderate Congestion
+2026-10-22 23:18:55.600445,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:19:00.673,1.0,low,2,Light Congestion
+2026-10-22 23:18:55.600445,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:19:00.679,1.0,low,2,Light Congestion
+2026-10-22 23:18:55.600445,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:19:00.683,1.0,low,1,Moderate Congestion
+2026-10-22 23:20:00.689421,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,2026-10-22 23:20:06.724,1.0,closed,1,Moderate Congestion
+2026-10-22 23:20:00.689421,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:20:06.730,1.0,low,2,Light Congestion
+2026-10-22 23:20:00.689421,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,2026-10-22 23:20:06.734,1.0,closed,1,Moderate Congestion
+2026-10-22 23:20:00.689421,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:20:06.739,1.0,low,2,Light Congestion
+2026-10-22 23:20:00.689421,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:20:06.743,1.0,low,1,Moderate Congestion
+2026-10-22 23:20:00.689421,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:20:06.748,1.0,low,2,Light Congestion
+2026-10-22 23:20:00.689421,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:20:06.753,1.0,low,2,Light Congestion
+2026-10-22 23:20:00.689421,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:20:06.757,1.0,low,1,Moderate Congestion
+2026-10-22 23:21:06.764730,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,2026-10-22 23:21:12.322,1.0,closed,1,Moderate Congestion
+2026-10-22 23:21:06.764730,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:21:12.330,1.0,low,2,Light Congestion
+2026-10-22 23:21:06.764730,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,2026-10-22 23:21:12.336,1.0,closed,1,Moderate Congestion
+2026-10-22 23:21:06.764730,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:21:12.342,1.0,low,2,Light Congestion
+2026-10-22 23:21:06.764730,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:21:12.346,1.0,low,1,Moderate Congestion
+2026-10-22 23:21:06.764730,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:21:12.353,1.0,low,2,Light Congestion
+2026-10-22 23:21:06.764730,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:21:12.361,1.0,low,2,Light Congestion
+2026-10-22 23:21:06.764730,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:21:12.370,1.0,low,1,Moderate Congestion
+2026-10-22 23:22:12.381662,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,2026-10-22 23:22:18.244,1.0,closed,1,Moderate Congestion
+2026-10-22 23:22:12.381662,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:22:18.251,1.0,low,2,Light Congestion
+2026-10-22 23:22:12.381662,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,2026-10-22 23:22:18.256,1.0,closed,1,Moderate Congestion
+2026-10-22 23:22:12.381662,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:22:18.263,1.0,low,2,Light Congestion
+2026-10-22 23:22:12.381662,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:22:18.268,1.0,low,1,Moderate Congestion
+2026-10-22 23:22:12.381662,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:22:18.273,1.0,low,2,Light Congestion
+2026-10-22 23:22:12.381662,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:22:18.279,1.0,low,2,Light Congestion
+2026-10-22 23:22:12.381662,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:22:18.284,1.0,low,1,Moderate Congestion
+2026-10-22 23:23:18.296081,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,2026-10-22 23:23:23.363,1.0,closed,1,Moderate Congestion
+2026-10-22 23:23:18.296081,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:23:23.370,1.0,low,2,Light Congestion
+2026-10-22 23:23:18.296081,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,2026-10-22 23:23:23.376,1.0,closed,1,Moderate Congestion
+2026-10-22 23:23:18.296081,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:23:23.382,1.0,low,2,Light Congestion
+2026-10-22 23:23:18.296081,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:23:23.386,1.0,low,1,Moderate Congestion
+2026-10-22 23:23:18.296081,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:23:23.390,1.0,low,2,Light Congestion
+2026-10-22 23:23:18.296081,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:23:23.395,1.0,low,2,Light Congestion
+2026-10-22 23:23:18.296081,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:23:23.400,1.0,low,1,Moderate Congestion
+2026-10-22 23:24:23.404684,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,2026-10-22 23:24:29.485,1.0,closed,1,Moderate Congestion
+2026-10-22 23:24:23.404684,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:24:29.492,1.0,low,2,Light Congestion
+2026-10-22 23:24:23.404684,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,2026-10-22 23:24:29.498,1.0,closed,1,Moderate Congestion
+2026-10-22 23:24:23.404684,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:24:29.501,1.0,low,2,Light Congestion
+2026-10-22 23:24:23.404684,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:24:29.506,1.0,low,1,Moderate Congestion
+2026-10-22 23:24:23.404684,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:24:29.511,1.0,low,2,Light Congestion
+2026-10-22 23:24:23.404684,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:24:29.520,1.0,low,2,Light Congestion
+2026-10-22 23:24:23.404684,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:24:29.524,1.0,low,1,Moderate Congestion
+2026-10-22 23:25:29.532178,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,2026-10-22 23:25:35.287,1.0,closed,1,Moderate Congestion
+2026-10-22 23:25:29.532178,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:25:35.295,1.0,low,2,Light Congestion
+2026-10-22 23:25:29.532178,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,2026-10-22 23:25:35.300,1.0,closed,1,Moderate Congestion
+2026-10-22 23:25:29.532178,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:25:35.306,1.0,low,2,Light Congestion
+2026-10-22 23:25:29.532178,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:25:35.312,1.0,low,1,Moderate Congestion
+2026-10-22 23:25:29.532178,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:25:35.317,1.0,low,2,Light Congestion
+2026-10-22 23:25:29.532178,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:25:35.324,1.0,low,2,Light Congestion
+2026-10-22 23:25:29.532178,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:25:35.328,1.0,low,1,Moderate Congestion
+2026-10-22 23:26:35.337231,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,2026-10-22 23:26:44.256,1.0,closed,1,Moderate Congestion
+2026-10-22 23:26:35.337231,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:26:44.263,1.0,low,2,Light Congestion
+2026-10-22 23:26:35.337231,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,2026-10-22 23:26:44.268,1.0,closed,1,Moderate Congestion
+2026-10-22 23:26:35.337231,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:26:44.273,1.0,low,2,Light Congestion
+2026-10-22 23:26:35.337231,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:26:44.277,1.0,low,1,Moderate Congestion
+2026-10-22 23:26:35.337231,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:26:44.281,1.0,low,2,Light Congestion
+2026-10-22 23:26:35.337231,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:26:44.287,1.0,low,2,Light Congestion
+2026-10-22 23:26:35.337231,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:26:44.293,1.0,low,1,Moderate Congestion
+2026-10-22 23:27:44.301339,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.522555,True,tomtom,2026-10-22 23:27:49.683,1.0,closed,1,Moderate Congestion
+2026-10-22 23:27:44.301339,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:27:49.689,1.0,low,2,Light Congestion
+2026-10-22 23:27:44.301339,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,2026-10-22 23:27:49.695,1.0,closed,1,Moderate Congestion
+2026-10-22 23:27:44.301339,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:27:49.701,1.0,low,2,Light Congestion
+2026-10-22 23:27:44.301339,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:27:49.706,1.0,low,1,Moderate Congestion
+2026-10-22 23:27:44.301339,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:27:49.711,1.0,low,2,Light Congestion
+2026-10-22 23:27:44.301339,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:27:49.715,1.0,low,2,Light Congestion
+2026-10-22 23:27:44.301339,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:27:49.720,1.0,low,1,Moderate Congestion
+2026-10-22 23:28:49.725653,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.530163,True,tomtom,2026-10-22 23:28:55.288,0.9333,closed,1,Moderate Congestion
+2026-10-22 23:28:49.725653,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:28:55.294,1.0,low,2,Light Congestion
+2026-10-22 23:28:49.725653,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,2026-10-22 23:28:55.299,1.0,closed,1,Moderate Congestion
+2026-10-22 23:28:49.725653,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:28:55.305,1.0,low,2,Light Congestion
+2026-10-22 23:28:49.725653,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:28:55.312,1.0,low,1,Moderate Congestion
+2026-10-22 23:28:49.725653,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:28:55.317,1.0,low,2,Light Congestion
+2026-10-22 23:28:49.725653,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:28:55.323,1.0,low,2,Light Congestion
+2026-10-22 23:28:49.725653,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:28:55.328,1.0,low,1,Moderate Congestion
+2026-10-22 23:29:55.333644,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.549588,True,tomtom,2026-10-22 23:30:00.471,1.0,closed,1,Moderate Congestion
+2026-10-22 23:29:55.333644,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:30:00.478,1.0,low,2,Light Congestion
+2026-10-22 23:29:55.333644,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.709336,True,tomtom,2026-10-22 23:30:00.483,1.0,closed,1,Moderate Congestion
+2026-10-22 23:29:55.333644,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:30:00.487,1.0,low,2,Light Congestion
+2026-10-22 23:29:55.333644,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:30:00.492,1.0,low,1,Moderate Congestion
+2026-10-22 23:29:55.333644,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:30:00.496,1.0,low,2,Light Congestion
+2026-10-22 23:29:55.333644,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:30:00.500,1.0,low,2,Light Congestion
+2026-10-22 23:29:55.333644,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:30:00.505,1.0,low,1,Moderate Congestion
+2026-10-22 23:31:00.510603,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.554869,True,tomtom,2026-10-22 23:31:06.046,0.9333,closed,1,Moderate Congestion
+2026-10-22 23:31:00.510603,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:31:06.052,1.0,low,2,Light Congestion
+2026-10-22 23:31:00.510603,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.696614,True,tomtom,2026-10-22 23:31:06.057,1.0,closed,1,Moderate Congestion
+2026-10-22 23:31:00.510603,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:31:06.063,1.0,low,2,Light Congestion
+2026-10-22 23:31:00.510603,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:31:06.066,1.0,low,1,Moderate Congestion
+2026-10-22 23:31:00.510603,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:31:06.073,1.0,low,2,Light Congestion
+2026-10-22 23:31:00.510603,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:31:06.080,1.0,low,2,Light Congestion
+2026-10-22 23:31:00.510603,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:31:06.087,1.0,low,1,Moderate Congestion
+2026-10-22 23:32:06.093827,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.56015,True,tomtom,2026-10-22 23:32:12.001,0.9333,closed,1,Moderate Congestion
+2026-10-22 23:32:06.093827,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:32:12.007,1.0,low,2,Light Congestion
+2026-10-22 23:32:06.093827,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.693217,True,tomtom,2026-10-22 23:32:12.013,1.0,closed,1,Moderate Congestion
+2026-10-22 23:32:06.093827,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:32:12.017,1.0,low,2,Light Congestion
+2026-10-22 23:32:06.093827,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:32:12.021,1.0,low,1,Moderate Congestion
+2026-10-22 23:32:06.093827,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:32:12.026,1.0,low,2,Light Congestion
+2026-10-22 23:32:06.093827,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:32:12.030,1.0,low,2,Light Congestion
+2026-10-22 23:32:06.093827,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:32:12.035,1.0,low,1,Moderate Congestion
+2026-10-22 23:33:12.040808,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.570712,True,tomtom,2026-10-22 23:33:17.445,0.9286,closed,1,Moderate Congestion
+2026-10-22 23:33:12.040808,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:33:17.452,1.0,low,2,Light Congestion
+2026-10-22 23:33:12.040808,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.69618,True,tomtom,2026-10-22 23:33:17.459,1.0,closed,1,Moderate Congestion
+2026-10-22 23:33:12.040808,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:33:17.466,1.0,low,2,Light Congestion
+2026-10-22 23:33:12.040808,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:33:17.471,1.0,low,1,Moderate Congestion
+2026-10-22 23:33:12.040808,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:33:17.476,1.0,low,2,Light Congestion
+2026-10-22 23:33:12.040808,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:33:17.480,1.0,low,2,Light Congestion
+2026-10-22 23:33:12.040808,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:33:17.485,1.0,low,1,Moderate Congestion
+2026-10-22 23:34:17.491266,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,13.0,14.0,874,811,0.570712,True,tomtom,2026-10-22 23:34:23.322,0.9286,closed,1,Moderate Congestion
+2026-10-22 23:34:17.491266,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:34:23.330,1.0,low,2,Light Congestion
+2026-10-22 23:34:17.491266,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.708902,True,tomtom,2026-10-22 23:34:23.336,1.0,closed,1,Moderate Congestion
+2026-10-22 23:34:17.491266,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:34:23.341,1.0,low,2,Light Congestion
+2026-10-22 23:34:17.491266,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:34:23.345,1.0,low,1,Moderate Congestion
+2026-10-22 23:34:17.491266,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:34:23.350,1.0,low,2,Light Congestion
+2026-10-22 23:34:17.491266,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:34:23.356,1.0,low,2,Light Congestion
+2026-10-22 23:34:17.491266,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:34:23.361,1.0,low,1,Moderate Congestion
+2026-10-22 23:35:23.366784,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.570712,True,tomtom,2026-10-22 23:35:28.853,1.0,closed,1,Moderate Congestion
+2026-10-22 23:35:23.366784,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:35:28.860,1.0,low,2,Light Congestion
+2026-10-22 23:35:23.366784,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.708902,True,tomtom,2026-10-22 23:35:28.865,1.0,closed,1,Moderate Congestion
+2026-10-22 23:35:23.366784,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:35:28.871,1.0,low,2,Light Congestion
+2026-10-22 23:35:23.366784,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:35:28.877,1.0,low,1,Moderate Congestion
+2026-10-22 23:35:23.366784,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:35:28.881,1.0,low,2,Light Congestion
+2026-10-22 23:35:23.366784,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:35:28.886,1.0,low,2,Light Congestion
+2026-10-22 23:35:23.366784,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:35:28.890,1.0,low,1,Moderate Congestion
+2026-10-22 23:36:28.897674,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.570712,True,tomtom,2026-10-22 23:36:34.587,0.9333,closed,1,Moderate Congestion
+2026-10-22 23:36:28.897674,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:36:34.593,1.0,low,2,Light Congestion
+2026-10-22 23:36:28.897674,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.708902,True,tomtom,2026-10-22 23:36:34.599,1.0,closed,1,Moderate Congestion
+2026-10-22 23:36:28.897674,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:36:34.606,1.0,low,2,Light Congestion
+2026-10-22 23:36:28.897674,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:36:34.610,1.0,low,1,Moderate Congestion
+2026-10-22 23:36:28.897674,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:36:34.618,1.0,low,2,Light Congestion
+2026-10-22 23:36:28.897674,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:36:34.623,1.0,low,2,Light Congestion
+2026-10-22 23:36:28.897674,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:36:34.631,1.0,low,1,Moderate Congestion
+2026-10-22 23:37:34.639721,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.575993,True,tomtom,2026-10-22 23:37:40.484,0.9333,closed,1,Moderate Congestion
+2026-10-22 23:37:34.639721,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:37:40.491,1.0,low,2,Light Congestion
+2026-10-22 23:37:34.639721,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.711866,True,tomtom,2026-10-22 23:37:40.496,1.0,closed,1,Moderate Congestion
+2026-10-22 23:37:34.639721,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:37:40.502,1.0,low,2,Light Congestion
+2026-10-22 23:37:34.639721,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:37:40.509,1.0,low,1,Moderate Congestion
+2026-10-22 23:37:34.639721,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:37:40.514,1.0,low,2,Light Congestion
+2026-10-22 23:37:34.639721,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:37:40.519,1.0,low,2,Light Congestion
+2026-10-22 23:37:34.639721,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:37:40.523,1.0,low,1,Moderate Congestion
+2026-10-22 23:38:40.528306,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,15.0,811,757,0.60768,True,tomtom,2026-10-22 23:38:45.991,0.9333,closed,1,Moderate Congestion
+2026-10-22 23:38:40.528306,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:38:45.997,1.0,low,2,Light Congestion
+2026-10-22 23:38:40.528306,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.705939,True,tomtom,2026-10-22 23:38:46.002,1.0,closed,1,Moderate Congestion
+2026-10-22 23:38:40.528306,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:38:46.006,1.0,low,2,Light Congestion
+2026-10-22 23:38:40.528306,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:38:46.012,1.0,low,1,Moderate Congestion
+2026-10-22 23:38:40.528306,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:38:46.017,1.0,low,2,Light Congestion
+2026-10-22 23:38:40.528306,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:38:46.024,1.0,low,2,Light Congestion
+2026-10-22 23:38:40.528306,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:38:46.029,1.0,low,1,Moderate Congestion
+2026-10-22 23:39:46.034429,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.638926,True,tomtom,2026-10-22 23:39:51.872,1.0,closed,1,Moderate Congestion
+2026-10-22 23:39:46.034429,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:39:51.880,1.0,low,2,Light Congestion
+2026-10-22 23:39:46.034429,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.705939,True,tomtom,2026-10-22 23:39:51.886,1.0,closed,1,Moderate Congestion
+2026-10-22 23:39:46.034429,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:39:51.892,1.0,low,2,Light Congestion
+2026-10-22 23:39:46.034429,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:39:51.898,1.0,low,1,Moderate Congestion
+2026-10-22 23:39:46.034429,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:39:51.903,1.0,low,2,Light Congestion
+2026-10-22 23:39:46.034429,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:39:51.907,1.0,low,2,Light Congestion
+2026-10-22 23:39:46.034429,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:39:51.911,1.0,low,1,Moderate Congestion
+2026-10-22 23:40:51.916606,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.638926,True,tomtom,2026-10-22 23:40:57.122,1.0,closed,1,Moderate Congestion
+2026-10-22 23:40:51.916606,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:40:57.127,1.0,low,2,Light Congestion
+2026-10-22 23:40:51.916606,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.702975,True,tomtom,2026-10-22 23:40:57.132,1.0,closed,1,Moderate Congestion
+2026-10-22 23:40:51.916606,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:40:57.138,1.0,low,2,Light Congestion
+2026-10-22 23:40:51.916606,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:40:57.145,1.0,low,1,Moderate Congestion
+2026-10-22 23:40:51.916606,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:40:57.148,1.0,low,2,Light Congestion
+2026-10-22 23:40:51.916606,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:40:57.158,1.0,low,2,Light Congestion
+2026-10-22 23:40:51.916606,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:40:57.163,1.0,low,1,Moderate Congestion
+2026-10-22 23:41:57.168078,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,15.0,15.0,757,757,0.630774,True,tomtom,2026-10-22 23:42:03.043,1.0,closed,1,Moderate Congestion
+2026-10-22 23:41:57.168078,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:42:03.048,1.0,low,2,Light Congestion
+2026-10-22 23:41:57.168078,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.705939,True,tomtom,2026-10-22 23:42:03.054,1.0,closed,1,Moderate Congestion
+2026-10-22 23:41:57.168078,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:42:03.061,1.0,low,2,Light Congestion
+2026-10-22 23:41:57.168078,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:42:03.067,1.0,low,1,Moderate Congestion
+2026-10-22 23:41:57.168078,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:42:03.072,1.0,low,2,Light Congestion
+2026-10-22 23:41:57.168078,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:42:03.080,1.0,low,2,Light Congestion
+2026-10-22 23:41:57.168078,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:42:03.086,1.0,low,1,Moderate Congestion
+2026-10-22 23:43:03.097261,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,15.0,15.0,757,757,0.637487,True,tomtom,2026-10-22 23:43:07.965,1.0,closed,1,Moderate Congestion
+2026-10-22 23:43:03.097261,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:43:07.972,1.0,low,2,Light Congestion
+2026-10-22 23:43:03.097261,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.718661,True,tomtom,2026-10-22 23:43:07.978,1.0,closed,1,Moderate Congestion
+2026-10-22 23:43:03.097261,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:43:07.985,1.0,low,2,Light Congestion
+2026-10-22 23:43:03.097261,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:43:07.990,1.0,low,1,Moderate Congestion
+2026-10-22 23:43:03.097261,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:43:07.995,1.0,low,2,Light Congestion
+2026-10-22 23:43:03.097261,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:43:08.000,1.0,low,2,Light Congestion
+2026-10-22 23:43:03.097261,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:43:08.005,1.0,low,1,Moderate Congestion
+2026-10-22 23:44:08.015815,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.645632,True,tomtom,2026-10-22 23:44:13.532,1.0,closed,1,Moderate Congestion
+2026-10-22 23:44:08.015815,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:44:13.537,1.0,low,2,Light Congestion
+2026-10-22 23:44:08.015815,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.674205,True,tomtom,2026-10-22 23:44:13.544,1.0,closed,1,Moderate Congestion
+2026-10-22 23:44:08.015815,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:44:13.549,1.0,low,2,Light Congestion
+2026-10-22 23:44:08.015815,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:44:13.555,1.0,low,1,Moderate Congestion
+2026-10-22 23:44:08.015815,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:44:13.560,1.0,low,2,Light Congestion
+2026-10-22 23:44:08.015815,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:44:13.564,1.0,low,2,Light Congestion
+2026-10-22 23:44:08.015815,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:44:13.571,1.0,low,1,Moderate Congestion
+2026-10-22 23:45:13.576534,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.645632,True,tomtom,2026-10-22 23:45:19.330,1.0,closed,1,Moderate Congestion
+2026-10-22 23:45:13.576534,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:45:19.338,1.0,low,2,Light Congestion
+2026-10-22 23:45:13.576534,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.661483,True,tomtom,2026-10-22 23:45:19.344,1.0,closed,1,Moderate Congestion
+2026-10-22 23:45:13.576534,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:45:19.351,1.0,low,2,Light Congestion
+2026-10-22 23:45:13.576534,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:45:19.355,1.0,low,1,Moderate Congestion
+2026-10-22 23:45:13.576534,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:45:19.361,1.0,low,2,Light Congestion
+2026-10-22 23:45:13.576534,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:45:19.366,1.0,low,2,Light Congestion
+2026-10-22 23:45:13.576534,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:45:19.371,1.0,low,1,Moderate Congestion
+2026-10-22 23:46:19.378552,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.646618,True,tomtom,2026-10-22 23:46:24.865,1.0,closed,1,Moderate Congestion
+2026-10-22 23:46:19.378552,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:46:24.870,1.0,low,2,Light Congestion
+2026-10-22 23:46:19.378552,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.655122,True,tomtom,2026-10-22 23:46:24.875,1.0,closed,1,Moderate Congestion
+2026-10-22 23:46:19.378552,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:46:24.880,1.0,low,2,Light Congestion
+2026-10-22 23:46:19.378552,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:46:24.884,1.0,low,1,Moderate Congestion
+2026-10-22 23:46:19.378552,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:46:24.889,1.0,low,2,Light Congestion
+2026-10-22 23:46:19.378552,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:46:24.894,1.0,low,2,Light Congestion
+2026-10-22 23:46:19.378552,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:46:24.898,1.0,low,1,Moderate Congestion
+2026-10-22 23:47:24.904808,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.655209,True,tomtom,2026-10-22 23:47:30.641,1.0,closed,1,Moderate Congestion
+2026-10-22 23:47:24.904808,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:47:30.646,1.0,low,2,Light Congestion
+2026-10-22 23:47:24.904808,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.655122,True,tomtom,2026-10-22 23:47:30.650,1.0,closed,1,Moderate Congestion
+2026-10-22 23:47:24.904808,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:47:30.655,1.0,low,2,Light Congestion
+2026-10-22 23:47:24.904808,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:47:30.661,1.0,low,1,Moderate Congestion
+2026-10-22 23:47:24.904808,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:47:30.665,1.0,low,2,Light Congestion
+2026-10-22 23:47:24.904808,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:47:30.670,1.0,low,2,Light Congestion
+2026-10-22 23:47:24.904808,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:47:30.677,1.0,low,1,Moderate Congestion
+2026-10-22 23:48:30.682676,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.653777,True,tomtom,2026-10-22 23:48:36.337,1.0,closed,1,Moderate Congestion
+2026-10-22 23:48:30.682676,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:48:36.346,1.0,low,2,Light Congestion
+2026-10-22 23:48:30.682676,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.655122,True,tomtom,2026-10-22 23:48:36.353,1.0,closed,1,Moderate Congestion
+2026-10-22 23:48:30.682676,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:48:36.361,1.0,low,2,Light Congestion
+2026-10-22 23:48:30.682676,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:48:36.368,1.0,low,1,Moderate Congestion
+2026-10-22 23:48:30.682676,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:48:36.378,1.0,low,2,Light Congestion
+2026-10-22 23:48:30.682676,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:48:36.384,1.0,low,2,Light Congestion
+2026-10-22 23:48:30.682676,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:48:36.388,1.0,low,1,Moderate Congestion
+2026-10-22 23:49:36.395561,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.659058,True,tomtom,2026-10-22 23:49:42.403,1.0,closed,1,Moderate Congestion
+2026-10-22 23:49:36.395561,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:49:42.410,1.0,low,2,Light Congestion
+2026-10-22 23:49:36.395561,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.648761,True,tomtom,2026-10-22 23:49:42.417,1.0,closed,1,Moderate Congestion
+2026-10-22 23:49:36.395561,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:49:42.423,1.0,low,2,Light Congestion
+2026-10-22 23:49:36.395561,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:49:42.428,1.0,low,1,Moderate Congestion
+2026-10-22 23:49:36.395561,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:49:42.434,1.0,low,2,Light Congestion
+2026-10-22 23:49:36.395561,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:49:42.438,1.0,low,2,Light Congestion
+2026-10-22 23:49:36.395561,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:49:42.442,1.0,low,1,Moderate Congestion
+2026-10-22 23:50:42.447404,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.659058,True,tomtom,2026-10-22 23:50:48.181,1.0,closed,1,Moderate Congestion
+2026-10-22 23:50:42.447404,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:50:48.185,1.0,low,2,Light Congestion
+2026-10-22 23:50:42.447404,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.6424,True,tomtom,2026-10-22 23:50:48.190,1.0,closed,1,Moderate Congestion
+2026-10-22 23:50:42.447404,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:50:48.195,1.0,low,2,Light Congestion
+2026-10-22 23:50:42.447404,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:50:48.200,1.0,low,1,Moderate Congestion
+2026-10-22 23:50:42.447404,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:50:48.205,1.0,low,2,Light Congestion
+2026-10-22 23:50:42.447404,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:50:48.212,1.0,low,2,Light Congestion
+2026-10-22 23:50:42.447404,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:50:48.219,1.0,low,1,Moderate Congestion
+2026-10-22 23:51:48.224314,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.659058,True,tomtom,2026-10-22 23:51:54.689,1.0,closed,1,Moderate Congestion
+2026-10-22 23:51:48.224314,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:51:54.696,1.0,low,2,Light Congestion
+2026-10-22 23:51:48.224314,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.6424,True,tomtom,2026-10-22 23:51:54.701,1.0,closed,1,Moderate Congestion
+2026-10-22 23:51:48.224314,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:51:54.706,1.0,low,2,Light Congestion
+2026-10-22 23:51:48.224314,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:51:54.712,1.0,low,1,Moderate Congestion
+2026-10-22 23:51:48.224314,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:51:54.715,1.0,low,2,Light Congestion
+2026-10-22 23:51:48.224314,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:51:54.719,1.0,low,2,Light Congestion
+2026-10-22 23:51:48.224314,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:51:54.723,1.0,low,1,Moderate Congestion
+2026-10-22 23:52:54.729263,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.665771,True,tomtom,2026-10-22 23:53:00.666,1.0,closed,1,Moderate Congestion
+2026-10-22 23:52:54.729263,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:53:00.671,1.0,low,2,Light Congestion
+2026-10-22 23:52:54.729263,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.6424,True,tomtom,2026-10-22 23:53:00.675,1.0,closed,1,Moderate Congestion
+2026-10-22 23:52:54.729263,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:53:00.679,1.0,low,2,Light Congestion
+2026-10-22 23:52:54.729263,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:53:00.687,1.0,low,1,Moderate Congestion
+2026-10-22 23:52:54.729263,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:53:00.691,1.0,low,2,Light Congestion
+2026-10-22 23:52:54.729263,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:53:00.696,1.0,low,2,Light Congestion
+2026-10-22 23:52:54.729263,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:53:00.701,1.0,low,1,Moderate Congestion
+2026-10-22 23:54:00.707352,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.66049,True,tomtom,2026-10-22 23:54:06.062,1.0,closed,1,Moderate Congestion
+2026-10-22 23:54:00.707352,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:54:06.085,1.0,low,2,Light Congestion
+2026-10-22 23:54:00.707352,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.66488,True,tomtom,2026-10-22 23:54:06.097,0.9231,closed,1,Moderate Congestion
+2026-10-22 23:54:00.707352,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:54:06.113,1.0,low,2,Light Congestion
+2026-10-22 23:54:00.707352,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:54:06.124,1.0,low,1,Moderate Congestion
+2026-10-22 23:54:00.707352,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:54:06.132,1.0,low,2,Light Congestion
+2026-10-22 23:54:00.707352,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:54:06.140,1.0,low,2,Light Congestion
+2026-10-22 23:54:00.707352,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:54:06.157,1.0,low,1,Moderate Congestion
+2026-10-22 23:55:06.173118,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.644647,True,tomtom,2026-10-22 23:55:11.914,1.0,closed,1,Moderate Congestion
+2026-10-22 23:55:06.173118,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:55:11.921,1.0,low,2,Light Congestion
+2026-10-22 23:55:06.173118,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,12.0,13.0,466,430,0.671241,True,tomtom,2026-10-22 23:55:11.926,0.9231,closed,1,Moderate Congestion
+2026-10-22 23:55:06.173118,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:55:11.933,1.0,low,2,Light Congestion
+2026-10-22 23:55:06.173118,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:55:11.937,1.0,low,1,Moderate Congestion
+2026-10-22 23:55:06.173118,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:55:11.943,1.0,low,2,Light Congestion
+2026-10-22 23:55:06.173118,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:55:11.949,1.0,low,2,Light Congestion
+2026-10-22 23:55:06.173118,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:55:11.955,1.0,low,1,Moderate Congestion
+2026-10-22 23:56:11.963013,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.639366,True,tomtom,2026-10-22 23:56:17.262,1.0,closed,1,Moderate Congestion
+2026-10-22 23:56:11.963013,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:56:17.268,1.0,low,2,Light Congestion
+2026-10-22 23:56:11.963013,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.671241,True,tomtom,2026-10-22 23:56:17.274,1.0,closed,1,Moderate Congestion
+2026-10-22 23:56:11.963013,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:56:17.279,1.0,low,2,Light Congestion
+2026-10-22 23:56:11.963013,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:56:17.284,1.0,low,1,Moderate Congestion
+2026-10-22 23:56:11.963013,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:56:17.290,1.0,low,2,Light Congestion
+2026-10-22 23:56:11.963013,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:56:17.294,1.0,low,2,Light Congestion
+2026-10-22 23:56:11.963013,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:56:17.298,1.0,low,1,Moderate Congestion
+2026-10-22 23:57:17.304823,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,15.0,15.0,757,757,0.634085,True,tomtom,2026-10-22 23:57:22.714,1.0,closed,1,Moderate Congestion
+2026-10-22 23:57:17.304823,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:57:22.720,1.0,low,2,Light Congestion
+2026-10-22 23:57:17.304823,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.671241,True,tomtom,2026-10-22 23:57:22.726,1.0,closed,1,Moderate Congestion
+2026-10-22 23:57:17.304823,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:57:22.730,1.0,low,2,Light Congestion
+2026-10-22 23:57:17.304823,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:57:22.735,1.0,low,1,Moderate Congestion
+2026-10-22 23:57:17.304823,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:57:22.739,1.0,low,2,Light Congestion
+2026-10-22 23:57:17.304823,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:57:22.744,1.0,low,2,Light Congestion
+2026-10-22 23:57:17.304823,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:57:22.749,1.0,low,1,Moderate Congestion
+2026-10-22 23:58:22.754332,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.646086,True,tomtom,2026-10-22 23:58:28.164,1.0,closed,1,Moderate Congestion
+2026-10-22 23:58:22.754332,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:58:28.171,1.0,low,2,Light Congestion
+2026-10-22 23:58:22.754332,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.652158,True,tomtom,2026-10-22 23:58:28.179,1.0,closed,1,Moderate Congestion
+2026-10-22 23:58:22.754332,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:58:28.189,1.0,low,2,Light Congestion
+2026-10-22 23:58:22.754332,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:58:28.194,1.0,low,1,Moderate Congestion
+2026-10-22 23:58:22.754332,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:58:28.200,1.0,low,2,Light Congestion
+2026-10-22 23:58:22.754332,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:58:28.204,1.0,low,2,Light Congestion
+2026-10-22 23:58:22.754332,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:58:28.209,1.0,low,1,Moderate Congestion
+2026-10-22 23:59:28.214212,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.646086,True,tomtom,2026-10-22 23:59:33.781,1.0,closed,1,Moderate Congestion
+2026-10-22 23:59:28.214212,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-22 23:59:33.789,1.0,low,2,Light Congestion
+2026-10-22 23:59:28.214212,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.652158,True,tomtom,2026-10-22 23:59:33.794,1.0,closed,1,Moderate Congestion
+2026-10-22 23:59:28.214212,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-22 23:59:33.799,1.0,low,2,Light Congestion
+2026-10-22 23:59:28.214212,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-22 23:59:33.806,1.0,low,1,Moderate Congestion
+2026-10-22 23:59:28.214212,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-22 23:59:33.810,1.0,low,2,Light Congestion
+2026-10-22 23:59:28.214212,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-22 23:59:33.816,1.0,low,2,Light Congestion
+2026-10-22 23:59:28.214212,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-22 23:59:33.821,1.0,low,1,Moderate Congestion
+2026-10-23 00:00:33.827036,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.637851,True,tomtom,2026-10-23 00:00:39.869,1.0,closed,1,Moderate Congestion
+2026-10-23 00:00:33.827036,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-23 00:00:39.882,1.0,low,2,Light Congestion
+2026-10-23 00:00:33.827036,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.636473,True,tomtom,2026-10-23 00:00:39.891,1.0,closed,1,Moderate Congestion
+2026-10-23 00:00:33.827036,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-23 00:00:39.896,1.0,low,2,Light Congestion
+2026-10-23 00:00:33.827036,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-23 00:00:39.900,1.0,low,1,Moderate Congestion
+2026-10-23 00:00:33.827036,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-23 00:00:39.907,1.0,low,2,Light Congestion
+2026-10-23 00:00:33.827036,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-23 00:00:39.912,1.0,low,2,Light Congestion
+2026-10-23 00:00:33.827036,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-23 00:00:39.916,1.0,low,1,Moderate Congestion
+2026-10-23 00:01:39.925728,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.637851,True,tomtom,2026-10-23 00:01:46.138,1.0,closed,1,Moderate Congestion
+2026-10-23 00:01:39.925728,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-23 00:01:46.142,1.0,low,2,Light Congestion
+2026-10-23 00:01:39.925728,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.636473,True,tomtom,2026-10-23 00:01:46.148,1.0,closed,1,Moderate Congestion
+2026-10-23 00:01:39.925728,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-23 00:01:46.152,1.0,low,2,Light Congestion
+2026-10-23 00:01:39.925728,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-23 00:01:46.156,1.0,low,1,Moderate Congestion
+2026-10-23 00:01:39.925728,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-23 00:01:46.164,1.0,low,2,Light Congestion
+2026-10-23 00:01:39.925728,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-23 00:01:46.169,1.0,low,2,Light Congestion
+2026-10-23 00:01:39.925728,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-23 00:01:46.173,1.0,low,1,Moderate Congestion
+2026-10-23 00:02:46.255569,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.646086,True,tomtom,2026-10-23 00:02:52.036,1.0,closed,1,Moderate Congestion
+2026-10-23 00:02:46.255569,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-23 00:02:52.042,1.0,low,2,Light Congestion
+2026-10-23 00:02:46.255569,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.598307,True,tomtom,2026-10-23 00:02:52.048,1.0,closed,1,Moderate Congestion
+2026-10-23 00:02:46.255569,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-23 00:02:52.053,1.0,low,2,Light Congestion
+2026-10-23 00:02:46.255569,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-23 00:02:52.059,1.0,low,1,Moderate Congestion
+2026-10-23 00:02:46.255569,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-23 00:02:52.065,1.0,low,2,Light Congestion
+2026-10-23 00:02:46.255569,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-23 00:02:52.071,1.0,low,2,Light Congestion
+2026-10-23 00:02:46.255569,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-23 00:02:52.076,1.0,low,1,Moderate Congestion
+2026-10-23 00:03:52.081788,pune_central,Pune Central (FC Road / Deccan),18.5204,73.8567,FRC4,14.0,14.0,811,811,0.662557,True,tomtom,2026-10-23 00:03:57.672,1.0,closed,1,Moderate Congestion
+2026-10-23 00:03:52.081788,shivajinagar,Shivajinagar Junction,18.5308,73.8475,FRC2,40.0,40.0,1523,1523,1.0,False,tomtom,2026-10-23 00:03:57.680,1.0,low,2,Light Congestion
+2026-10-23 00:03:52.081788,swargate,Swargate Bus Terminal & Flyover,18.5018,73.8636,FRC4,13.0,13.0,430,430,0.579224,True,tomtom,2026-10-23 00:03:57.685,1.0,closed,1,Moderate Congestion
+2026-10-23 00:03:52.081788,hinjawadi,Hinjawadi IT Park Phase 1,18.5913,73.7389,FRC2,30.0,30.0,1835,1835,1.0,False,tomtom,2026-10-23 00:03:57.690,1.0,low,2,Light Congestion
+2026-10-23 00:03:52.081788,hadapsar,Hadapsar Magarpatta Bypass,18.5089,73.9259,FRC4,21.0,21.0,117,117,1.0,False,tomtom,2026-10-23 00:03:57.695,1.0,low,1,Moderate Congestion
+2026-10-23 00:03:52.081788,viman_nagar,Viman Nagar (Pune Airport Road),18.5679,73.9143,FRC1,36.0,36.0,624,624,1.0,False,tomtom,2026-10-23 00:03:57.700,1.0,low,2,Light Congestion
+2026-10-23 00:03:52.081788,kothrud,Kothrud (Paud Road),18.5074,73.8077,FRC3,36.0,36.0,1988,1988,1.0,False,tomtom,2026-10-23 00:03:57.704,1.0,low,2,Light Congestion
+2026-10-23 00:03:52.081788,katraj,Katraj Tunnel Highway,18.4575,73.8677,FRC4,18.0,18.0,339,339,1.0,False,tomtom,2026-10-23 00:03:57.709,1.0,low,1,Moderate Congestion
